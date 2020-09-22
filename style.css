@@ -8,6 +8,7 @@ body{
 
 h1{
     font-size: 40px;
+    color: #2883e3;
     text-align: center;
     border-bottom: 3px solid #2883e3;
 
@@ -25,7 +26,7 @@ header, main, footer{
 header, footer, footer a {
     text-align: center;
     background-color: #cecece;
-    color: whitesmoke;
+    color: #2883e3;
 }
 
 header img {
@@ -35,5 +36,5 @@ header img {
 }
 
 footer {
-    font-size: 10px ;
+    font-size: 20px ;
 }
