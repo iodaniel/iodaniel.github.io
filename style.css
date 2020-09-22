@@ -7,14 +7,32 @@ body{
 }
 
 h1{
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
-    border-bottom: 2px solid #cecece;
+    border-bottom: 3px solid #cecece;
 
 }
 h2{
-    font-size: 14px;
+    font-size: 18px;
     text-align:left;
+}
+header, main, footer{
+    margin: 1.25rem  auto;
+    padding:1rem;
+    max-width: 1024px;
+}
+header, footer, footer a {
+    text-align: center;
+    background-color: #141414;
+    color: whitesmoke;
+}
 
+header img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
 
+footer {
+    font-size: 10px ;
 }
