@@ -3,7 +3,8 @@ body{
     font-size:25px;
     line-height: 50px;
     color: #2883e3;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
+
 }
 
 h1{
@@ -11,6 +12,7 @@ h1{
     color: #2883e3;
     text-align: center;
     border-bottom: 3px solid #2883e3;
+    font-family: 'Lato', sans-serif;
 
 }
 h2{
@@ -27,6 +29,8 @@ header, footer, footer a {
     text-align: center;
     background-color: #cecece;
     color: #2883e3;
+    font-family: 'Lato', sans-serif;
+
 }
 
 header img {
