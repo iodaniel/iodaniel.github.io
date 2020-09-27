@@ -24,6 +24,7 @@ header, main, footer{
     padding: 2rem;
     max-width: 1080px;
     border-radius: 25px;
+    font-family: 'Karla', sans-serif;
 }
 header, footer, footer a {
     text-align: center;
