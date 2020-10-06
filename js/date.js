@@ -1,2 +1,1 @@
-var date = new Date();
-document.getElementById("actualDate").innerHTML = Date;
+document.getElementById("lastModification").innerHTML = Date;
