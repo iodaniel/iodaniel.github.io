@@ -61,10 +61,18 @@ h3{
     width: 100%;
     height: auto;
     float: right;
+} 
+main{
+display: grid;
+width: 100%;
+height: auto;
+margin: 2rem auto;
+padding: 2rem;
+max-width: 1080px;
+border-radius: 25px;
+font-family: 'Karla', sans-serif;
 }
-
-header, main, footer{
-    display: grid;
+header, footer{
     width: 100%;
     height: auto;
     margin: 2rem auto;
