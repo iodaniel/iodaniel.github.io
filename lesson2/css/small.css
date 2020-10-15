@@ -62,6 +62,7 @@ h3{
     height: auto;
     float: right;
 } 
+
 main{
 display: grid;
 width: 100%;
@@ -72,6 +73,7 @@ max-width: 1080px;
 border-radius: 25px;
 font-family: 'Karla', sans-serif;
 }
+
 header, footer{
     width: 100%;
     height: auto;
