@@ -50,10 +50,19 @@ a:hover {
     margin:auto;
     padding: 1rem;
   }
-
+.typograph{
+    background-color:  #ffff;
+    text-align: center;
+    color: #4C6085;
+    margin:auto;
+    padding: 1rem;
+}
   body{
     background-color:  #fff;
     color:#32322c ;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
 }
 
   .logo-side{
@@ -68,11 +77,17 @@ a:hover {
     height: auto;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
 }
 footer{
     background-color:  #36f1CD;
     color: #32322c;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
 
 }
 /* For mobile phones: */
