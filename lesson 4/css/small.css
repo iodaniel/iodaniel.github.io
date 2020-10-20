@@ -123,8 +123,6 @@ footer{
 
 }
 .hamburger{
-    width: 30px;
-    position:fixed;
     height: auto;
     right: 50px;
     top: 50px;
