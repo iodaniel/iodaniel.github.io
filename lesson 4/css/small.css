@@ -31,9 +31,8 @@ p b{
 .logo-side {
     margin: auto 5px;
     float: center;
-    width: 150px;
-    height: auto;
     width: 100px;
+    height: auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
