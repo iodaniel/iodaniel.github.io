@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300&family=Quicksand:wght@700&display=swap');
+h1{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
 
-h1, h2{
+}
+
+h2{
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -19,7 +26,19 @@ p{
 p b{
     color:#39A0ed;
 }
- 
+
+
+.logo-side {
+    margin: auto 5px;
+    float: center;
+    width: 150px;
+    height: auto;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar ul {
     background-color:  #36f1CD;
     align-items: center;
@@ -33,7 +52,7 @@ p b{
   nav ul li a {
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
-	display: flex;
+	display: block;
 	color:#4C6085;
 	text-align: center;
 	padding: 1rem;
@@ -44,13 +63,20 @@ a:hover {
     background-color: #39A0ed;
     color: #fff;
   }
-
+  header p {
+      margin-top: 0ex;
+  }
   header{
+    display:flex;
     background-color:  #4C6085;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    /*
     text-align: center;
     color: #fff;
     margin:auto;
-    padding: 1rem;
+    padding: 1rem;*/
   }
 
 .typograph{
@@ -68,13 +94,7 @@ a:hover {
     padding: 1rem;
 }
 
-  .logo-side{
-    display:grid;
-    width: 150px;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .persona{
     font-size: 18px;
@@ -102,21 +122,19 @@ footer{
     padding: 1rem;
 
 }
-/* For mobile phones: */
-[class*="col-"] {
+.hamburger{
+    width: 30px;
+    position:fixed;
+    height: auto;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
     display: flex;
-    width: 100%;
-  }
-  
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-	nav ul { 
-		display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-    }   
-	nav a {
-		font-size: 1rem;
-    }
-  }
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.responsive li {
+    display: block;
+}
