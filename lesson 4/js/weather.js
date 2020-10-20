@@ -1,5 +1,5 @@
-menu = document.querySelector(".hamburger");
-navbar = document.querySelector('.navbar_elements');
 
-menu.addEventListener('click', () => {navbar.classList.toggle('change');
-})
+function toggleMenu(){
+   console.log(document.getElementById("primaryNav").classList);
+   document.getElementById("primaryNav").classList.toggle("hide");
+}

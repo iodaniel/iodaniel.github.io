@@ -1,18 +1,4 @@
-/* For mobile phones: */
-[class*="col-"] {
-    display: flex;
-    width: 100%;
-  }
   
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-	nav ul.hide{ 
-		display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-    }   
-	nav a {
-		font-size: 1rem;
-    }
+@media only screen and (min-width: 35em) {
+    
   }
