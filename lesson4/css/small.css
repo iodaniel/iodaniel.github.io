@@ -27,10 +27,8 @@ p b{
     color:#39A0ed;
 }
 
-
 .logo-side {
     margin: auto 5px;
-    float: center;
     width: 100px;
     height: auto;
     display: inline-flex;
@@ -45,7 +43,6 @@ nav button{
     font-size: 1.6rem;
     color: #4C6085;
     font-family: 'Quicksand', sans-serif;
-
 }
 nav{
     font-family: sans-serif;
@@ -55,21 +52,18 @@ nav{
     list-style-type: none;
     margin: 0;
     padding: 0;        
-
 }
 
 nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
-
 }
 nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration:none;
     border-top:1px solid rgba(2, 250, 217, 0.3);
-
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
 	display: block;
