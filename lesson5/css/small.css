@@ -1,0 +1,147 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300&family=Quicksand:wght@700&display=swap');
+*/
+h1{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+    color:#32322c ;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color:#32322c ;
+
+}
+
+p b{
+    color:#39A0ed;
+}
+
+.logo-side {
+    margin: auto 5px;
+    width: 100px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+/*------Hamburger Menu--------*/
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4C6085;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    font-family: sans-serif;
+    background-color:  #36f1CD;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;        
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration:none;
+    border-top:1px solid rgba(2, 250, 217, 0.3);
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+	display: block;
+	color:#4C6085;
+	text-align: center;
+	 
+}
+
+nav ul li.active a{
+    background-color: #4C6085;
+    color:#fff;}
+
+nav ul li a:hover{
+    background-color: #39A0ed;
+    color: #fff;
+ }
+
+nav ul.hide{
+    display:none;
+}
+
+.navbar:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  header p {
+      margin-top: 0ex;
+  }
+
+  header{
+    display:flex;
+    background-color:  #4C6085;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+  }
+
+.typograph{
+    background-color:  #ffff;
+    text-align: center;
+    color: #4C6085;
+    margin:auto;
+    padding: 1rem;
+}
+
+  body{
+    background-color:  #fff;
+    color:#32322c ;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
+}
+.persona{
+    font-size: 18px;
+    font-family:'Poppins', sans-serif;
+}
+
+.color_scheme{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color:  #36f1CD;
+    color: #32322c;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin:auto;
+    padding: 1rem;
+
+}
