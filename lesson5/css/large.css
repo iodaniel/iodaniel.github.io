@@ -17,5 +17,21 @@
         border-right: 1px solid rgba(2, 250, 217, 0.3);
         padding: .5rem 1rem;
     }
-
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        width: 100px;
+        height: auto;
+    }
+    .map{
+        width: 60%;
+        margin: 50px 0 20px 20px;
+        height: auto;
+        box-shadow: 0 0 30px #777;
+        border-radius: 25px;  
+        margin: 50px 50px 15px 0px;
+    }
 }

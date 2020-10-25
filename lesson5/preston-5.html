@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hamburger menu by Daniel Martinez ">
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="description" content="Preston weather summary site | Daniel Martinez">
+    <link rel="stylesheet" href="css/normalization.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300&family=Quicksand:wght@700&display=swap" rel="stylesheet">
  
-    <title>Weather Zen Club</title>
+    <title>Preston summary page lesson 5</title>
 </head>
-<body>
-    <header>
-       
+<body onload="showAlert();">
+    <div id= "message">
+        <p class="alert">Saturday = Preston Panches in the Park!  9:00a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>     
         <img class="logo-side" src="images/logo.png" alt="Weatherzen logo"> 
         <div> 
         <h1>Weather Zen </h1>
@@ -36,21 +38,122 @@
                             <li><a href="#">Gallery</a></li>
                         </ul>
             </nav>
-        <h2>Preston Idaho</h2>
-                <div>
-                    <h3>Hero Image & Summary</h3>
-                </div>
-                <div>
-                    <h3>Five Day Forecast</h3>
-                    <h3>contact Information</h3>
-                </div>
+            <h2>Preston, Idaho</h2>
+            <div class= "container">
+                <img class="meditation_preston1" src="images/preston.jpg" alt="meditation outdoors"/>
+               
+                  </section>
+                  <div class="summary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span>Snow</span></p>
+                    <p>High: <span>23°F</span></p>
+                    <p>Wind Chill: <span>°F</span></p>
+                    <p>Humidity: <span>77%</span></p>
+                    <p>Wind Speed: <span>20 mph</span></p>
+                  </div>
 
+                <div class='five_days'>
+                <div>
+                    <h2>Five Day Forecast</h2>
+                    <br>
+                    <table>
+                        <tr>
+                          <td><strong>Mon</strong></td>
+                          <td><strong>Tue</strong></td>
+                          <td><strong>Wed</strong></td>
+                          <td><strong>Thu</strong></td>
+                          <td><strong>Fri</strong></td>
+                        </tr>
+            
+                        <tr>
+                          <td><img class="icon" src="images/icon1.png" alt="Weather icon"/></td>
+                          <td><img class="icon" src="images/icon2.png" alt="Weather icon"/></td>
+                          <td><img class="icon" src="images/icon3.png" alt="Weather icon"/></td>
+                          <td><img class="icon" src="images/icon2.png" alt="Weather icon"/></td>
+                          <td><img class="icon" src="images/icon1.png" alt="Weather icon"/></td>
+                        </tr>
+            
+                        <tr>
+                          <td><b>85°</b></td>
+                          <td><b>77°</b></td>
+                          <td><b>57°</b></td>
+                          <td><b>87°</b></td>
+                          <td><b>67°</b></td>
+                        </tr>
+                      </table>
+
+                </div>
+          
+            </div>
+            <div class="article">
+                <h2>Activities to go outdoor in Preston</h2>
+                <br>
+                <img class= "article_picture" src="images/meditation_preston.jpg" alt="Article of Preston">
+                <br>
+                <p class="text_article" >
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justoLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo
+          quam, ullamcorper sit amet vestibulum eget, tempus eget metus. Etiam
+          tincidunt interdum porttitor. Pellentesque consequat, leo commodo
+          efficitur egestas, enim dui feugiat tellus, sit amet finibus dolor
+          arcu et nibh. Proin a auctor lacus. Proin ultricies gravida erat, at
+          interdum felis rhoncus ut. Donec scelerisque congue feugiat. Morbi vel
+          placerat nisi, ut tincidunt neque. Nunc dolor dui, ornare eget diam
+          et, consequat porttitor velit. Praesent malesuada urna dolor. Duis id
+          eros libero. Quisque finibus purus sed ultricies hendrerit.
+          In fermentum feugiat blandit. Mauris efficitur sodales purus vitae
+          euismod. Nulla efficitur neque non lorem ultrices lacinia. Etiam
+          blandit imperdiet erat, eu cursus massa placerat a. Quisque pulvinar
+          arcu vitae augue auctor, in mattis sem maximus. Nulla viverra ante vel
+          diam bibendum, at fringilla urna tristique. Sed odio diam, mollis non
+          condimentum ac, ultrices scelerisque nunc. Suspendisse viverra eu dui
+          nec dapibus. Orci varius natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Ut metus augue, posuere feugiat
+          sodales sit amet, consectetur in ex. Vivamus sollicitudin sed odio
+          sollicitudin feugiat. Nulla facilisi. Phasellus tempor placerat
+          tincidunt. Sed tortor orci, volutpat in sagittis et, consequat quis
+          leo. Aenean at porta elit. Donec pellentesque elit sed quam sodales,
+          id varius libero tincidunt. Integer odio magna, luctus et vehicula
+          eget, efficitur vel tellus. Duis porttitor dictum tortor. Mauris
+          sodales in velit eget luctus. Suspendisse potenti. Curabitur efficitur
+          quam orci, in maximus lorem sagittis sit amet. Vestibulum tempor
+          posuere dui et congue. Etiam lorem ipsum, rhoncus sed ultricies sed,
+          semper in justo. Sed et lacus ut quam tincidunt imperdiet. Suspendisse
+          dignissim est leo, quis vulputate mauris semper ut. Etiam sagittis
+          libero et purus lacinia, ac sagittis diam mattis. Vivamus eu est orci.
+          Proin odio nisl, rhoncus vitae laoreet ut, ullamcorper in enim. Mauris
+          pretium faucibus ex sed euismod. Nullam sit amet odio vestibulum,
+          consectetur justo sed, pulvinar velit. Curabitur maximus risus orci,
+          at sagittis nibh lobortis pellentesque.</p>
+              
+          </div>
+          <div class=contact>
+            <a href="https://www.google.com/maps/search/?api=1&query=Preston%2C%20Preston%2C%20ID&query_place_id=ChIJMWzafIz3VIcRP0paRvy0s_E"><img class="map" src="images/map.jpg" alt="map of Preston"></a> 
+            <div class=info>
+               
+            <h2>Contact Information</h2>
+            <br>
+            <h3>Weather Zen Club</h3>
+                <p><span> &#x1F4CD;</span>Preston, ID </p>
+                <p><span> &#128222;</span>Phone (999)999-9898</p>
+                <p><span>&#128231; </span>Email info@weatherzen.club</p>
+            <br>
+            <ul class="social_list">
+                <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="https://youtube.com"><img src="images/youtube.png" alt="youtube icon" ></a></li>
+                <li><a href="https://web.whatsapp.com"><img src="images/whats.png" alt="whatsapp icon" ></a></li>
+            </ul>
+
+            </div>
+        
+          </div>
+        </div>      
         </main>
         <footer>
-            <p id="actualDate"></p> <!--for some reason I was unable to render the js file date.js-->
-            <p>2020 | &copy; Daniel Martinez | Mexico, Chihuahua|- </p><a href="http://www.byui.edu">BYU-Idaho</a>
+           <!--for some reason I was unable to render the js file date.js-->
+            <p>2020 | &copy; Daniel Martinez | Mexico, Chihuahua|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a>
         </footer>
+        <script type="text/javascript" src="js/message.js"></script>
         <script type="text/javascript" src="js/weather.js"></script>
-        <script type="text/javascript" src="../data.js"></script>
+        <script type="text/javascript" src="js/date.js"></script>
     </body>
 </html> 
