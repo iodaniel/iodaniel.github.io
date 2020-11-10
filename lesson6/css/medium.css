@@ -1,0 +1,26 @@
+@media only screen and (min-width: 520px){
+    .contact {
+        display: flex;
+    }
+    .map {
+    
+    text-align:left;
+}
+.summary{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    background: radial-gradient(#fff);
+    border: 1px solid #fff;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    border-radius: 25px;
+  }
+.info{
+    margin-left: 3%;
+    min-width: 250px;
+    text-align: right;
+}
+}

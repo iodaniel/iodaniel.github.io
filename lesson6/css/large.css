@@ -1,0 +1,56 @@
+@media only screen and (min-width: 960px){
+    nav button {
+        display: none;
+    }
+    nav ul.hide{
+        display:block;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li{
+        float: left;/* make colapse the menu*/
+        
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(2, 250, 217, 0.3);
+        padding: .5rem 1rem;
+    }
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        width: 100px;
+        height: auto;
+    }
+    .map{
+        width: 60%;
+        margin: 50px 0 20px 20px;
+        height: auto;
+        box-shadow: 0 0 30px #777;
+        border-radius: 25px;  
+        margin: 50px 50px 15px 0px;
+    }
+    .container {
+        height: auto;
+        width: 100%;
+        text-align:center;
+    }
+    .summary{
+        font-size: large;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        position: absolute;
+        top: 70px;
+        left: 90px;
+        background: radial-gradient(#fff);
+        border: 1px solid #fff;
+        padding: .5rem;
+        box-shadow: 0 0 30px #777;
+        border-radius: 25px;
+      }
+}

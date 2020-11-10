@@ -3,7 +3,7 @@ body{
     font-size:25px;
     line-height: 50px;
     color: #2883e3;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -12,7 +12,7 @@ h1{
     color: #2883e3;
     text-align: center;
     border-bottom: 3px solid #2883e3;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 h2{
@@ -24,7 +24,7 @@ header, main, footer{
     padding: 2rem;
     max-width: 1080px;
     border-radius: 25px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header, footer, footer a {
     text-align: center;
