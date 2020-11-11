@@ -2,7 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300&family=Quicksand:wght@700&display=swap');
 */
 
+picture.photo{
+    width: 50%;
+    margin: 0 2% 2% 2%;
+    width: 400px;
+    height: auto;
+    float: left;  
+    box-shadow: 0 0 30px #777;
+  
 
+}
+
+ picture.photo img{
+    width: 100%;
+}
 
 #message {
     display: none;
@@ -17,6 +30,7 @@ body {
     padding: 0;
     height: 100%;
   }
+
 h1{
     font-family: 'Quicksand', sans-serif;
     margin-top: 30px;
@@ -226,22 +240,18 @@ table {
 }
 
 .article{
+   
     margin: 0px auto;
-    position: relative;
     height: 100%;
     border: 1px solid #fff;
     padding: .3rem 2rem;
     box-shadow: 0 0 30px #777;
     opacity: 10;
-    margin: 30px;
     border-radius: 25px;
     color:#4C6085;
     font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    
+  
 }
 
 .text_article{
@@ -252,14 +262,7 @@ table {
     line-height: 2;
     text-align: justify;
     text-justify: inter-word;
-}
-.article_picture{
-    width: 400px;
-    height: auto;
-    display:flex;
-    float: right;  
-    box-shadow: 0 0 30px #777;
-    border-radius: 25px;    
+    
 }
 
 .contact{

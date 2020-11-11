@@ -52,5 +52,27 @@
         padding: .5rem;
         box-shadow: 0 0 30px #777;
         border-radius: 25px;
+
       }
+      .summary h3{
+          font-size: 3rem;
+      }
+      .summary p{
+        font-size: 2rem;
+      }
+        article figure.photo{
+            width: 50%;
+            margin: 0 0 0 2%;
+            align-items: center;
+            float:right;
+            display: block;
+        
+        }
+        
+        article figure.photo img{
+            width: 100%;
+          
+        
+        }
+    
 }
