@@ -1,0 +1,39 @@
+@media only screen and (min-width: 960px){
+    nav button {
+        display: none;
+    }
+    nav ul.hide{
+        display:block;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li{
+        float: left;/* make colapse the menu*/
+        
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(2, 250, 217, 0.3);
+        padding: .5rem 1rem;
+    }
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        height: 100%;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;    
+    }
+
+    figure:hover {
+      box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    }
+    
+}
