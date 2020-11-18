@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Building ACME Wildwest Table">
+    <link rel="stylesheet" href="css/normalization.css">
+    <link rel="stylesheet" href="css/tablebuild.css">
+    <title>Bulding an ACME Wildwest Table | WDD230</title>
+  </head>
+  <body>
+    <h1>Bulding an ACME Wildwest Table</h1>
+    <main>
+      <div>
+     
+        <h2>My Attempt</h2>
+        <table>
+          <thead><!--table header-->
+            <tr>
+              <th colspan="3">ACME Wildwest</th> <!--only provide 3 columns colspan only 3 columns-->
+            </tr>
+          </thead>
+          
+          <tbody><!--table body-->
+            <tr>
+              <th>Period</th><!--table subtitle -->
+              <th>Sales</th>
+              <th>Sales Goal</th>        
+            </tr>
+            <tr><!--table rows-->
+              <td>August</td>
+              <td>$3,590</td>
+              <td>$4,000</td>        
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>$4,420</td>
+              <td>$5,000</td>        
+            </tr>
+            <tr>
+              <td>October</td>
+              <td>$4,870</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>$8,610</td>
+              <td class="changeStyle">$7,500</td>        
+            </tr>
+            <tr>
+              <td>Black Friday</td>
+              <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+              <td>December</td>
+              <td>$6,820</td>
+              <td>$7,500</td>
+            </tr>
+          </tbody>
+          <tfoot><!--table footer-->
+            <tr>
+              <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div>
+        <h2>Original Table</h2>
+        <picture>
+          <img src="images/table.png" alt="original picture">
+        </picture>
+    </div>
+</main>
+    <footer>
+         <p>2020 | &copy; Daniel Martinez | Mexico, Chihuahua|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a>
+     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Ubuntu']}});</script>
+    <script src="js/date.js"></script>
+  </body>
+</html>
