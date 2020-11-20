@@ -1,0 +1,24 @@
+@media only screen and (min-width: 520px){
+    .contact {
+        display: flex;
+    }
+    .map {
+    
+    text-align:left;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;    
+}
+
+figure:hover {
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+  }
+
+.info{
+    margin-left: 3%;
+    min-width: 250px;
+    text-align: right;
+}
+}
