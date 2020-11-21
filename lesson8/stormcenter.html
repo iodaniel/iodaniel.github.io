@@ -44,12 +44,12 @@
                 <legend>Contact Information</legend>
                     <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
                     <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
-                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="9158882343" required></label>
-                    <label class="top">Zipcode *<input type="number" name="zipcode" placeholder="00000" max="99999"required></label>
+                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="1234567890" required></label>
+                    <label class="top">Zipcode: *<input type="number" name="zipcode" placeholder="00000" max="99999"required></label>
                 </fieldset>
                 <fieldset>
                 <legend>Storm Information</legend>
-                <div>Audience</div>
+                
                     <label class="top">Date Storm<input type="date" name="stormdate"></label>
                     <label class="top">Storm Type<input list="storm_types" name="stormtype"/>
                         <datalist id="storm_types">
@@ -61,7 +61,7 @@
                         </datalist>
                     </label>
                    
-                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                    <label class="rating" for="rating">Rating: &nbsp;&nbsp;&nbsp;
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span>
                     </label>
@@ -78,32 +78,35 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
-                    <div> Softwate Needed</div>
-                    <label class="sbs"><input type="checkbox" name="editing" value ="yes">Photo Editing</label>
-                    <label class="sbs"><input type="checkbox" name="code" value ="yes">Coding</label>
-                    <label class="sbs"><input type="checkbox" name="process" value ="yes">Preprocessor</label>
-                    <label class="sbs"><input type="checkbox" name="client" value ="yes">FTP Client</label>
+                    <label class="top">Storm Region
+                    <select name="storm-Region">
+                        <option value="">Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                    </label>
+                    <label class="top">In-danger Level</label>
+                    <div>
+                      <label class="sbs">
+                        <input type="radio" name="in-dangerLevel" value="yes"> Yes
+                      </label>
+                      <label class="sbs">
+                        <input type="radio" name="in-dangerLevel" value="maybe"> Maybe
+                      </label>
+                      <label class="sbs">
+                          <input type="radio" name="in-dangerLevel" value="no"> No
+                      </label>
+                    </div>
+                    
+                    <label class="top">
+                        Additional Information
+                        <textarea class="info" name="comment"></textarea>
+                    </label>
+            
                 </fieldset>
 
-                <fieldset>
-                <legend>Funding</legend>
-                    <label class="top">Anticipat Completion Date <input type="date" name="completeDate"></label>
-                    <label class="top"> Course Subject <select name="subject">
-                    <option value="">please Select &#9662;</option>
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Profesional</option>
-                    <option value="info">Apply Technology</option>
-                    <option value="data">Data Professional</option>
-                    <option value="business">Business Professional</option>
-                    <option value="security">Cyber Security</option>
-                </select>
-                </label>
-
-                    <label class="top">How Many Authors<input type="number" name="authors" ></label>
-
-
-                </fieldset>
-                <input type="submit" value="Propose my course"  class="submitBtn">
+                <input type="submit" value="Report a Natural Disaster"  class="submitBtn">
             </form>
 
 
