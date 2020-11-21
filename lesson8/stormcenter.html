@@ -12,12 +12,10 @@
    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300&family=Quicksand:wght@700&display=swap" rel="stylesheet">-->
  
-    <title>Preston summary page lesson 5</title>
+    <title>Storm Center Weather Zen</title>
 </head>
-<body onload="showAlert();">
-    <div id= "message">
-        <p class="alert">Saturday = Preston Panches in the Park!  9:00a.m. Saturday at the city park pavilion.</p>
-    </div>
+<body >
+  
     <header>     
         <img class="logo-side" src="images/logo.png" alt="Weatherzen logo"> 
         <div> 
@@ -38,14 +36,17 @@
                         <li ><a href="iodaniel.github.io/lesson7/gallery-7.html">Gallery</a></li>
                     </ul>
             </nav>
-
+            <h1>Storm Center</h1>
+            
+            
             <form method= "get" action="thanks.html">
                 <fieldset>
                 <legend>Contact Information</legend>
+                    
                     <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
                     <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
-                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="1234567890" required></label>
-                    <label class="top">Zipcode: *<input type="number" name="zipcode" placeholder="00000" max="99999"required></label>
+                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required></label>
+                    <label class="top">Zipcode: *<input type="number" name="zipcode" placeholder="xxxxx" max="99999"required></label>
                 </fieldset>
                 <fieldset>
                 <legend>Storm Information</legend>
@@ -61,9 +62,10 @@
                         </datalist>
                     </label>
                    
-                    <label class="rating" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+                    <label class="rating" >Storm Severity : <input type="range" id="rating" value="5" min="1" max="10" step="1" 
+                          list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                          <span id="ratingvalue">5</span>
+                        <p>10 is considerate the more sever to 0 is lest sever. </p>
                     </label>
                     <datalist id="tickmarks">
                         <option value="0">
@@ -80,7 +82,7 @@
                     </datalist>
                     <label class="top">Storm Region
                     <select name="storm-Region">
-                        <option value="">Select Region ...</option>
+                        <option value="">Select Region ...&#9662;</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
@@ -113,13 +115,12 @@
         </main>
         <footer>
            <!--for some reason I was unable to render the js file date.js-->
-            <p>2020 | &copy; Daniel Martinez | Mexico, Chihuahua|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a>
+            <p>2020 | &copy; Daniel Martinez | El Paso, TX  <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a>
         </footer>
-        <script type="text/javascript" src="js/stormcenter.js"></script>
-        <script type="text/javascript" src="js/weather.js"></script>
-        <script type="text/javascript" src="js/date.js"></script>
-        <script type="text/javascript" src="js/windChill.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/stormcenter.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/weather.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Quicksand','Poppins  ']}});</script>
     </body>
 </html> 
