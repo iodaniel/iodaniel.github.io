@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+
+main{
+    padding: 1rem;
+    margin: 0 auto;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 5px purple;
+    background-color: white;
+}
+
+p{
+    font-family: 'Castoro', italic;
+    margin: 0 auto;
+    padding:10px;
+    text-align: center;
+}
+h1, h2{
+    font-family:'Castoro';
+    margin: 0 auto;
+    padding:10px;
+    text-align: center;
+}
+
+.cards{
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    margin:30px;
+    align-items: center;
+}
+img{
+    margin:20px;
+    width: 70%;
+    height: auto;
+}
+@media only screen and (min-width: 375px){
+    main div.cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width: 500px){
+    main div.cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 800px){
+    main div.cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
