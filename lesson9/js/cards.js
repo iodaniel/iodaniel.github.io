@@ -11,7 +11,7 @@ fetch(requestURL)
             if (cities[i].name == 'Preston' || cities[i].name == 'Fish Haven' || cities[i].name == 'Soda Springs') {
 
                 let image = document.createElement('img');
-                let card = document.createElement('information');
+                let card = document.createElement('section');
                 let h1 = document.createElement('h1');
                 let h3 = document.createElement('h3')
                 let year = document.createElement('p');

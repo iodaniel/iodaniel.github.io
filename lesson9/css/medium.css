@@ -21,18 +21,18 @@ figure:hover {
     min-width: 250px;
     text-align: right;
 }
-@media only screen and (min-width: 500px){
+
     main div.cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
     }
-    main div.cards img{
+    main div.cards img p h3 {
         width: 350px;
         height: 232px;
         box-shadow: 5px 10px #434343;
 
     }
-    main div.cards information{
+    main div.cards section{
             color: #434343;
             font-family: quicksand;
             margin: 30px 30px 50px 20px;
@@ -41,9 +41,43 @@ figure:hover {
             border-radius: 15px;
            
         }
+    section{
+        display: grid;
+    }  
+    section:nth-child(even) img{
+        display: block;
+        grid-column: 1;
+    }
+    section:nth-child(even) h1{
+        grid-column: 3;
+    }
+    section:nth-child(even) h3{
+        grid-column: 3;
+    }
+    section:nth-child(even) p{
+        grid-column: 3;
+    }
+   
+    section:nth-child(even) .motto{
+        grid-column: 3;
+    }
+    section img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        width: 80%;
+        margin: 20px;
+    }
+    section p {
+        grid-column-start: 1;
+        margin: 2px;
+    }
+
+   
     .info{
+        font-family: Poppins;
         padding: 10px 0px 10px 0px;
         margin: 10px 60px 0px 0px;
     } 
-}
 }

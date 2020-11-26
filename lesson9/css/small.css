@@ -206,6 +206,7 @@ figure:hover {
 
 .info{
     margin-left: 50px;
+    font-family: Poppins;
     
 }
 
@@ -346,7 +347,7 @@ main div.cards img{
     
 
 }
-main div.cards information{
+main div.cards section{
         color: #434343;
         font-family: quicksand;
         margin: 30px 30px 50px 20px;
