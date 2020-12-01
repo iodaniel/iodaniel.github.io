@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Zen gallery | Daniel Martinez">
+    <link rel="stylesheet" href="css/normalization.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+   
+    <title>Weather Zen Gallery | WDD 230 </title>
+</head>
+<body onload="showAlert();">
+    <div id= "message">
+        <p class="alert">Saturday = Preston Panches in the Park!  9:00a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>     
+        <img class="logo-side" src="images/logo.png" alt="Weatherzen logo"> 
+        <div> 
+        <h1>Weather Zen </h1>
+        <h2>Be Ready For Any Moment</h2>
+        </div>
+    </header>
+            <nav class="navbar">
+                <!--<img src="images/logo.png">-->
+                <button onclick="toggleMenu()">&#9776; Menu</button>  
+                    <ul id="primaryNav" class= "">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../preston-7.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                        <li class="active"><a href="iodaniel.github.io/lesson7/gallery-7.html">Gallery</a></li>
+                    </ul>
+            </nav>
+    <main>
+        <h1>Image Gallery</h1>
+        <br>
+        <div class="gallery">
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/lago.jpg" alt="lago day"/>
+              <figcaption>Template weather with no probability of rain</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="High probability of rain"/>
+              <figcaption>High probability of rain</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/green.jpg" alt=" Sunny great weather "/>
+              <figcaption>Sunny day and great weather</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/thunderstorm.jpg" alt="High risk of thunderstorm"/>
+              <figcaption>High probability of thunderstorm</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/street.jpg" alt="Snow day"/>
+              <figcaption>Time of snow</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="thurderstorm day"/>
+              <figcaption>99% of probability of thunderstorm</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/rainbow.jpg" alt="raining day"/>
+              <figcaption>77% of probability of rain</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/sky.jpg" alt="Cloudy day"/>
+              <figcaption>Cloudy but with good stable weather</figcaption>
+            </figure>
+            <figure>
+              <img src="images/placeholder.jpg" data-src="images/tree.jpg" alt="High temperature day"/>
+              <figcaption>High temperature of 105 degree</figcaption>
+            </figure>
+        </div>
+        </main>
+  
+    <footer>
+        <!--for some reason I was unable to render the js file date.js-->
+         <p>2020 | &copy; Daniel Martinez | Mexico, Chihuahua|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a>
+     </footer>
+     <script  src="js/message.js"></script>
+     <script  src="js/weather.js"></script>
+     <script  src="js/date.js"></script>
+     <script  src="js/windChill.js"></script>
+     <script  src="js/lazyload.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+     <script>WebFont.load({google: {families: ['Quicksand','Poppins  ']}});</script>
+
+
+    </body>
+    </html>
