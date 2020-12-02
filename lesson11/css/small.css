@@ -436,8 +436,10 @@ table {
     /*border-radius: 25px;*/
     color:#4C6085;
     font-family: 'Quicksand', sans-serif;
-    
   
+}
+ .author{
+    text-align: center;
 }
 
 .text_article{

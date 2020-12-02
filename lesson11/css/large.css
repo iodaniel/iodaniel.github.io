@@ -92,18 +92,23 @@
         .tableIcon img{
             width: 100px;
             height: auto;
+            justify-content: center;
+            align-items: center;
         }
         .tableDate{
             font-family: quicksand;
             font-weight: 900;
             font-size: 30px;
             color:#4C6085;
+            background-color: #36f1CD;
+            text-align: center;   
         }
         .tableTemp scan{
             font-family: quicksand;
             font-weight: 900;
             font-size: 30px;
             color:#434343;
+            text-align: center;
         }
         .map{
             width: 100%;
