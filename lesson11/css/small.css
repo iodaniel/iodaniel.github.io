@@ -232,7 +232,10 @@ nav ul.hide{
 .gallery{
     display:block;
 }
-
+figcaption{
+    font-family: quicksand;
+    font-weight: 400;
+}
 figure:hover {
     box-shadow: 0 3px 15px rgba(0,0,0,0.4);
   }
