@@ -15,7 +15,29 @@
 figure:hover {
     box-shadow: 0 3px 15px rgba(0,0,0,0.4);
   }
+ 
 
+  table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tableIcon img{
+    width: 100px;
+    height: auto;
+}
+.tableDate{
+    font-family: quicksand;
+    font-weight: 900;
+    font-size: 30px;
+    color:#4C6085;
+}
+.tableTemp scan{
+    font-family: quicksand;
+    font-weight: 900;
+    font-size: 30px;
+    color:#434343;
+}
 .info{
     margin-left: 3%;
     min-width: 250px;

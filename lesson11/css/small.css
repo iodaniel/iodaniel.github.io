@@ -39,18 +39,26 @@ h1{
 
 h2{
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    
 }
-
 .summary h3{
     font-family: 'Quicksand', sans-serif;
-    color:#ffff;
+    color:#36F1CD;
     font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 3px 3px black;
 }
 
 .summary p{
     font-family: 'Poppins', sans-serif;
-    color:#ffff ;
+    color: #36F1CD;
     font-size: 16px;
+        font-weight: bolder;
+    text-shadow: 3px 3px black;
+    
+    
 
 }
 .thanks{
