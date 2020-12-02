@@ -236,7 +236,23 @@ nav ul.hide{
 figure:hover {
     box-shadow: 0 3px 15px rgba(0,0,0,0.4);
   }
-
+  .contact{
+    display: block;
+        margin: 0px auto;
+        border: 1px solid #fff;
+        padding: .3rem 2rem;
+        box-shadow: 0 0 30px #777;
+        opacity: 10;
+        color:#4C6085;
+        font-family: 'Quicksand', sans-serif;
+          
+    }
+.map{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;  
+    justify-content: left;
+}
 .info{
     margin-left: 50px;
     font-family: Poppins;
@@ -408,7 +424,7 @@ table {
     padding: .3rem 2rem;
     box-shadow: 0 0 30px #777;
     opacity: 10;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     color:#4C6085;
     font-family: 'Quicksand', sans-serif;
     
