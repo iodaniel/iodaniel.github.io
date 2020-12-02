@@ -40,6 +40,19 @@ h1{
 h2{
     font-family: 'Quicksand', sans-serif;
 }
+
+.summary h3{
+    font-family: 'Quicksand', sans-serif;
+    color:#ffff;
+    font-size: 24px;
+}
+
+.summary p{
+    font-family: 'Poppins', sans-serif;
+    color:#ffff ;
+    font-size: 16px;
+
+}
 .thanks{
     font-family: 'Quicksand', sans-serif;
     text-align: center;
@@ -165,6 +178,26 @@ nav ul.hide{
   height: 100%;
   
 }
+.meditation_preston1{
+    margin: 0px auto;
+    /*backgroud-color: #cecece;*/
+    border: 1px solid transparent;
+    width:100%;
+    height: 400px;
+  
+}
+
+.summary{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    border: 1px solid #fff;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    border-radius: 25px;
+  }
 
 .subtittle{
     position:absolute; 
@@ -357,6 +390,42 @@ main div.cards section{
        
 
 }
+/**********WEATHER TABLE***************/ß
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tableIcon{
+    width: 30px;
+    height: auto;
+}
+.article{
+   
+    margin: 0px auto;
+    height: 100%;
+    border: 1px solid #fff;
+    padding: .3rem 2rem;
+    box-shadow: 0 0 30px #777;
+    opacity: 10;
+    border-radius: 25px;
+    color:#4C6085;
+    font-family: 'Quicksand', sans-serif;
+    
+  
+}
+
+.text_article{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding:1rem;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
 
 /*------------FOOTER-------------*/
 
