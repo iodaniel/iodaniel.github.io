@@ -20,6 +20,8 @@ figure:hover {
     margin-left: 3%;
     min-width: 250px;
     text-align: right;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 60px 0px 0px;
 }
 
     main div.cards{
@@ -74,10 +76,5 @@ figure:hover {
         margin: 2px;
     }
 
-   
-    .info{
-        font-family: Poppins;
-        padding: 10px 0px 10px 0px;
-        margin: 10px 60px 0px 0px;
-    } 
+  
 }
