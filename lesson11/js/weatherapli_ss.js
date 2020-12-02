@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=8eba9b61b1d76000625d0f19841e6bcb";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=8eba9b61b1d76000625d0f19841e6bcb";
 
 
 fetch(apiURL)
@@ -21,10 +21,3 @@ fetch(apiURL)
    weathericon.setAttribute('src', iconsrc);
    weathericon.setAttribute('alt', jsObject.weather[0].description);
 });
-
-
-
-
-
-
-
