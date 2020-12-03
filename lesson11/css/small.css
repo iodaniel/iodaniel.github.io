@@ -450,9 +450,21 @@ table {
     line-height: 2;
     text-align: justify;
     text-justify: inter-word;
-    
+     
 }
 
+.events{
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    padding:1rem;
+    line-height: 2;
+    text-align: justify;
+    color:white;
+    background-color: #4C6085;
+    text-justify: inter-word;
+    
+}
 
 /*------------FOOTER-------------*/
 

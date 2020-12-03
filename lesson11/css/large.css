@@ -183,5 +183,16 @@
                 font-weight: 700;
             
             }
+            .events{
+                display:flex;
+                border: 1px solid #4C6085;
+                width: 100%;
+                margin: 0px;
+                padding: 10px 0px 0px 0px;
+                font-family: quicksand;
+                background-color: #4C6085;
+                font-weight: 700;
+
+            }
         }
 
