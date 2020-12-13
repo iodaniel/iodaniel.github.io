@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scooter Rent in Cozumel| Daniel Martinez">
+    <link rel="stylesheet" href="css/normalization.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico"><!--Add the favicon-->
+    <title>Scooter Rent in Cozumel</title>
+</head>
+<body onload="showAlert();">
+    <div id= "message">
+        <p class="alert">Saturday = Preston Panches in the Park!  9:00a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>     
+        <img class="logo-side" src="images/logo.jpg" alt="Weatherzen logo"> 
+        <div> 
+        <h1>Rent A Scooter in Cozumel</h1>
+        <h2>Live an adventure now</h2>
+        </div>
+    </header>
+        <main>
+            <nav class="navbar">
+                       <!--<img src="images/logo.png">-->
+                       <button onclick="toggleMenu()">&#9776; Menu</button>  
+                       <ul id="primaryNav" class= "">
+                            <li><a href="../scoots/home.html">Home</a></li>
+                            <li class="active"><a href="../scoots/reservation.html">Reservation Now</a></li>
+                            <li><a href="../scoots/tour.html">Tour</a></li>
+                            <li><a href="../scoots/rental.html">Inventory</a></li>
+                            <li><a href="../scoots/contact.html">Contact Us</a></li>
+                            <li><a href="../scoots/team.html">Team</a></li>
+                       
+                        </ul>
+            </nav>
+            <div class= "container">
+                <picture class="hero-image">
+                  <source media="(max-width: 450px)" srcset="images/stone400.png">
+                  <source media="(max-width: 770px)" srcset="images/stone600.png">
+                  <source media="(max-width: 1123px)" srcset="images/hero.png">
+                  <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
+                </picture>  
+                <div class="hero-text" >
+                    <h1>Town infor</h1>
+                </div>
+                
+                <div class="cards"></div>
+
+            <div class=contact>
+            <picture>
+              <source media="(max-width: 350px)" srcset="images/map159px.jpg">
+                <source media="(max-width: 959px)" srcset="images/map421px.jpg">
+                <source media="(min-width: 960px)" srcset="images/map631px.jpg">
+                <img class="map" src="images/map.jpg" alt="map of Preston">
+            </picture>
+           
+            <div class=info>
+               
+            <h2>Contact Information</h2>
+            <br>
+            <h3>Weather Zen Club</h3>
+                <p><span> &#x1F4CD;</span>Preston, ID </p>
+                <p><span> &#128222;</span>Phone (999)999-9898</p>
+                <p><span>&#128231; </span>Email info@weatherzen.club</p>
+            <br>
+            <ul class="social_list">
+                <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="https://youtube.com"><img src="images/youtube.png" alt="youtube icon" ></a></li>
+                <li><a href="https://web.whatsapp.com"><img src="images/whats.png" alt="whatsapp icon" ></a></li>
+            </ul>
+
+            </div>
+        
+          </div>
+        </div>      
+        </main>
+        <footer>
+           <!--for some reason I was unable to render the js file date.js-->
+            <p>2020 | &copy; Daniel Martinez | El Paso, TX USA|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a> <a href="home-wireframe.html">Wireframe</a>
+            <a href="../index.html">Assignment Portal</a>
+        </footer>
+        <script src="js/cards.js"></script>
+        <script  src="js/message.js"></script>
+        <script  src="js/weather.js"></script>
+        <script  src="js/date.js"></script>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Nerko One','JetBrains Mono']}});</script>
+    </body>
+</html> 

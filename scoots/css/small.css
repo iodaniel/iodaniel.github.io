@@ -1,0 +1,172 @@
+/*----------- logo header----------*/
+
+picture.photo{
+    width: 50%;
+    margin: 0 2% 2% 2%;
+    width: 400px;
+    height: auto;
+    float: left;  
+    box-shadow: 0 0 30px #777;
+}
+
+ picture.photo img{
+    width: 100%;
+}
+
+#message {
+    display: none;
+    text-align: center;
+    background-color: #36f1CD;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+h1{
+    font-family: 'JetBrains Mono', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'JetBrains Mono', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.summary h3{
+    font-family: 'Quicksand', sans-serif;
+    color:#36F1CD;
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 3px 3px black;
+}
+
+.summary p{
+    font-family: 'Poppins', sans-serif;
+    color: #36F1CD;
+    font-size: 16px;
+        font-weight: bolder;
+    text-shadow: 3px 3px black;
+    
+    
+
+}
+.thanks{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+p b{
+    color:#39A0ed;
+}
+
+.logo-side {
+    margin: auto 5px;
+    width: 100px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+header p {
+    margin-top: 0ex;
+}
+
+header{
+  display:flex;
+  background-color:  #E7BB41;
+  justify-content: center;
+  width: 100%;
+  color: #393E41;
+}
+
+/*------Hamburger Menu--------*/
+nav button{
+    margin: 0px 140px 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4C6085;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+nav{
+    font-family: 'JetBrains Mono';
+    background-color:  #E7BB41;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;        
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration:none;
+    border-top:1px solid #E7BB41;
+    font-size: 24px;
+    font-family: 'JetBrains Mono', sans-serif;
+	display: block;
+	color:#44BBA4;
+	text-align: center;
+	 
+}
+
+nav ul li.active a{
+    background-color: #D3D0CB;
+    color:#393E41;
+}
+
+nav ul li a:hover{
+    background-color: #44BBA4;
+    color:#393E41;
+ }
+
+nav ul.hide{
+    display:none;
+}
+
+.navbar:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*----------BODY------------*/
+
+
+
+
+
+/*--------FOOTER0----------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#E7BB41;
+    color: #393E41;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin:0;
+    padding: 1rem;
+    width:97%;
+    height: 100px;
+    font-size: 0.8em;
+}
+
+
+
+
