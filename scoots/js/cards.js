@@ -11,7 +11,7 @@ fetch(requestURL)
         for (let i = 0; i < vehicle.length; i++) {
 
                 let card = document.createElement('section')
-                let name = document.createElement('h1')
+                let name = document.createElement('h2')
                 let image = document.createElement('img');
                 let crew = document.createElement('p')
 
@@ -29,18 +29,26 @@ fetch(requestURL)
                 name.textContent = vehicle[i].name;
                 card.appendChild(name);
                 
-               // h3.textContent = cities[i].motto;
-               // card.appendChild(h3);
+                 crew.textContent ="Number of persons:" +' '+vehicle[i].crew;
+                 card.appendChild(crew);
                 
-               // year.textContent = 'Year Founded:' + ' ' + cities[i].yearFounded;
-              //  card.appendChild(year);
+                walkhalf.textContent = 'Walk-in rent for half day cost:' + ' ' + vehicle[i].walkhalf;
+                card.appendChild(walkhalf);
                 
+                walkfull.textContent = 'Walk-in rent for full day cost:' + ' ' + vehicle[i].walkfull;
+                card.appendChild(walkfull);
+
+                reservationhalf.textContent = 'Reservartion rent for full day cost:' + ' ' + vehicle[i]. reservationhalf;
+                card.appendChild( reservationhalf);
+
+                reservationfull.textContent = 'Reservation rent for full day cost:' + ' ' + vehicle[i]. reservationfull;
+                card.appendChild( reservationfull);
               //  population.textContent = 'Population:' + ' ' + cities[i].currentPopulation;
               //  card.appendChild(population);
                 
                // rain.textContent = 'Annual Rain Fall:' + ' ' + cities[i].averageRainfall;
               //  card.appendChild(rain);
-                
+              
                 document.querySelector('div.cards').appendChild(card);
             
         }
