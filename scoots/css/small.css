@@ -239,3 +239,41 @@ footer{
 
 
 
+/*******CONTACT***************/
+.contact{
+    display: block;
+        margin: 0px auto;
+        border: 1px solid #fff;
+        padding: .3rem 2rem;
+        box-shadow: 0 0 30px #777;
+        opacity: 10;
+        color:#4C6085;
+        font-family: 'Quicksand', sans-serif;
+          
+    }
+    .map{
+        width: 100%;
+        height: 300px;
+        justify-content: left;
+    }
+    .info{
+        margin-left: 50px;
+        font-family:  'Quicksand', sans-serif;
+        
+    }
+    ul.social_list img{
+        width: 36px;
+        height: auto;
+        margin:5px 20px;
+        padding:5px;
+    }
+    
+    ul.social_list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+       }
+    
+    ul.social_list li{
+        display: inline-block;
+    }
