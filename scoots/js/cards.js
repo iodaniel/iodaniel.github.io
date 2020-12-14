@@ -22,7 +22,7 @@ fetch(requestURL)
                 
                 
 
-                image.setAttribute('src',  + vehicle[i].photo);
+                image.setAttribute('src', 'images/' + vehicle[i].photo);
                 image.setAttribute('alt', name.textContent + '-' + vehicle[i].order);
                 card.appendChild(image);
 
@@ -45,3 +45,5 @@ fetch(requestURL)
             
         }
     });
+
+    
