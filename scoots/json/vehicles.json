@@ -1,0 +1,64 @@
+{
+    "rental": [
+        {
+            "name": "Honda Metro Scooter",
+            "type": "scooter",
+            "crew": "1 person",
+            "reservationhalf": "$20",
+            "reservationfull": "$30",
+            "walkhalf": "$25",
+            "walkfull": "$35",
+            "image": "images/Honda_Metro.jpg"
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "type": "scooter",
+            "crew": "2 persons",
+            "reservationhalf": "$30",
+            "reservationfull": "$40",
+            "walkhalf": "$35",
+            "walkfull": "$45",
+            "image": "images/HondaDio.jpg"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "type": "scooter",
+            "crew": "2 persons",
+            "reservationhalf": "$40",
+            "reservationfull": "$50",
+            "walkhalf": "$45",
+            "walkfull": "$55",
+            "image": "images/Honda_PRX2.jpg"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "type": "atv",
+            "crew": "4 persons",
+            "reservationhalf": "$50",
+            "reservationfull": "$70",
+            "walkhalf": "$60",
+            "walkfull": "$80",
+            "image": "images/Honda_Pionner.jpg"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "type": "car",
+            "crew": "4 persons",
+            "reservationhalf": "$60",
+            "reservationfull": "$85",
+            "walkhalf": "$70",
+            "walkfull": "$90",
+            "image": "images/jeep2.jpg"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with A/C",
+            "type": "car",
+            "crew": "5 persons",
+            "reservationhalf": "$70",
+            "reservationfull": "$100",
+            "walkhalf": "$85",
+            "walkfull": "$125",
+            "image": "images/jeep_4.jpg"
+        }
+    ]
+    }
