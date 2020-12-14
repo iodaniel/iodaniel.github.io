@@ -184,10 +184,7 @@ nav ul.hide{
         background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
         background-color:#ffab23;
     }
-    .myButton:active {
-        position:relative;
-        top:1px;
-    }
+   
     
 	
    
