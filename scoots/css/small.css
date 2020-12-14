@@ -42,25 +42,25 @@ h2{
     
 }
 .summary h3{
-    font-family: 'Quicksand', sans-serif;
-    color:#36F1CD;
+    font-family: 'JetBrains Mono', sans-serif;
+    color:#393E41;
     font-size: 24px;
     font-weight: bolder;
-    text-shadow: 3px 3px black;
+  
 }
 
 .summary p{
-    font-family: 'Poppins', sans-serif;
-    color: #36F1CD;
+    font-family: 'JetBrains Mono', sans-serif;
+    color: #393E41;
     font-size: 16px;
         font-weight: bolder;
-    text-shadow: 3px 3px black;
+
     
     
 
 }
 .thanks{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     text-align: center;
 }
 
@@ -146,7 +146,21 @@ nav ul.hide{
 }
 /*----------BODY------------*/
 
+.day_forecast{
+    border: 1px solid #fff;
+    padding: .3rem 2rem;
+    box-shadow: 0 0 30px #777;
+    opacity: 10;
+    margin: 30px;
+   
+    color:#393E41;
+    font-family: 'JetBrains Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
 /*------------FORM--------------*/
 form fieldset{
     margin: 2rem 0;
@@ -227,7 +241,7 @@ footer{
     align-items: center;
     background-color:#E7BB41;
     color: #393E41;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     text-align: center;
     margin:0;
     padding: 1rem;
@@ -248,7 +262,7 @@ footer{
         box-shadow: 0 0 30px #777;
         opacity: 10;
         color:#4C6085;
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'JetBrains Mono', sans-serif;
           
     }
     .map{
@@ -258,7 +272,7 @@ footer{
     }
     .info{
         margin-left: 50px;
-        font-family:  'Quicksand', sans-serif;
+        font-family:  'JetBrains Mono', sans-serif;
         
     }
     ul.social_list img{

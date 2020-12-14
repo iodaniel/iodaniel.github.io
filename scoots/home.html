@@ -32,40 +32,71 @@
                             <li><a href="../scoots/tour.html">Tour</a></li>
                             <li><a href="../scoots/rental.html">Inventory</a></li>
                             <li><a href="../scoots/contact.html">Contact Us</a></li>
-                            <li><a href="../scoots/team.html">Team</a></li>
-                       
                         </ul>
             </nav>
             <div class= "container">
                 <picture class="hero-image">
                   <source media="(max-width: 450px)" srcset="images/stone400.png">
                   <source media="(max-width: 770px)" srcset="images/stone600.png">
-                  <source media="(max-width: 1123px)" srcset="images/hero.png">
+                  <source media="(max-width: 1123px)" srcset="images/hero.jpg">
                   <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
+               
                 </picture>  
+
+                      
+                <div class='day_forecast'>
+                   <h2>Forecast</h2>
+                    <br>
+
+                <div class="summary">
+                    <h3>Weather Summary</h3>
+                    <p class="summary_color">Currently: <span id="curtemp"></span></p>
+                    <p>High: <span id="hightemp"></span> &deg;F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wind"></span> MPH</p>
+                  </div>
+
+                    <table>
+                        <tr class='tableDate'>
+                          <td><span id="dayofweek1"></span></td>
+                          <td><span id="dayofweek2"></span></td>
+                          <td><span id="dayofweek3"></span></td>
+                        </tr>
+            
+                        <tr class='tableIcon'>
+                          <td><img id="icon1" src="#" alt="weather icon"></td>
+                          <td><img id="icon2" src="#" alt="weather icon"></td>
+                          <td><img id="icon3" src="#" alt="weather icon"></td>
+                        </tr>
+            
+                        <tr class="tableTemp">
+                          <td><span id="temp1"></span> &deg;F</td>
+                          <td><span id="temp2"></span> &deg;F</td>
+                          <td><span id="temp3"></span> &deg;F</td>                      
+                        </tr>
+                      </table>
+
+                </div>
+          
+            </div>
                 <div class="hero-text" >
                     <h1>Town infor</h1>
                 </div>
                 
                 <div class="cards"></div>
 
-            <div class=contact>
-            <picture>
-              <source media="(max-width: 350px)" srcset="images/map159px.jpg">
-                <source media="(max-width: 959px)" srcset="images/map421px.jpg">
-                <source media="(min-width: 960px)" srcset="images/map631px.jpg">
-                <img class="map" src="images/map.jpg" alt="map of Preston">
-            </picture>
-           
-            <div class=info>
-               
-            <h2>Contact Information</h2>
-            <br>
-            <h3>Weather Zen Club</h3>
-                <p><span> &#x1F4CD;</span>Preston, ID </p>
-                <p><span> &#128222;</span>Phone (999)999-9898</p>
-                <p><span>&#128231; </span>Email info@weatherzen.club</p>
-            <br>
+                <div class="contact">
+                    <h3>Location and contact infomation: </h3>
+                    <p class="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2373.749801687111!2d-86.97605561907069!3d20.47569243278637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sterminal%20maya!5e0!3m2!1ses!2sus!4v1607921577945!5m2!1ses!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7711.257592352181!2d-86.9515165544771!3d20.497133380094347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1607920497808!5m2!1ses!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                        <p><span> &#x1F4CD;</span>Terminal Puerto Maya, Mexico</p>
+                        <p class="phone1"><span> &#128222;</span>Phone +52(999)548-8945</p>
+                        <p class="phone1"><span>&#128231; </span>Email info@scoots.com</p>
+                        <p class="position2"><span> &#x1F4CD;</span>Cozumel, Mexico</p>
+                        <p class="position3"><span> &#128222;</span>Phone +52(999)548-4599</p>
+                        <p class="position4"><span>&#128231; </span>Email info@scoots.com</p>
+                        
+                    <br>
             <ul class="social_list">
                 <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a></li>
                 <li><a href="https://youtube.com"><img src="images/youtube.png" alt="youtube icon" ></a></li>
@@ -86,6 +117,8 @@
         <script  src="js/message.js"></script>
         <script  src="js/weather.js"></script>
         <script  src="js/date.js"></script>
+        <script src="js/forecast.js"></script>
+        <script src="js/summary.js"></script>
       
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Nerko One','JetBrains Mono']}});</script>

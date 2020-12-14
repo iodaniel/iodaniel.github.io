@@ -1,4 +1,6 @@
 @media only screen and (min-width: 960px){
+   
+
     nav button {
         display: none;
     }
@@ -25,7 +27,23 @@
     img {
         height: 100%;
     }
-        
+
+    form {
+        display:grid;
+        grid-template-columns:1fr 1fr ;
+        gap:10px;
+        margin: 2rem 0;
+        border:1px solid #445ba9;
+      }
+     .form2{
+        grid-column-start: 1;
+        grid-row-start:2;
+
+     }   
+     .submitBtn{
+         grid-column-start: 1;
+
+     }   
     .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -48,5 +66,52 @@
     .position4{
         grid-column-start: 2;
         grid-row-start:5;
+    }
+
+.day_forecast{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    gap:10px;
+}
+
+    .summary{
+         grid-column-start: 2;
+        grid-row-start: 2;
+        font-family: 'JetBrains Mono', sans-serif;
+        color:#393E41;
+       background-color: #E7BB41;
+        top: 5px;
+        left: 90px;
+        border: 3px solid #fff;
+        padding: .5rem;
+        box-shadow: 0 0 30px #777;
+     ;
+      }
+    /******************Forecast table***************/
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tableIcon img{
+        width: 100px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .tableDate{
+        font-family: JetBrains Mono;
+        font-weight: 900;
+        font-size: 30px;
+        color:#393E41;
+        background-color:#E7BB41;
+        text-align: center;   
+    }
+    .tableTemp scan{
+        font-family:JetBrains Mono;
+        font-weight: 900;
+        font-size: 30px;
+        color:#434343;
+        text-align: center;
     }
 }
