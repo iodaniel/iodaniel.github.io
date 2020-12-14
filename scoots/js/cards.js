@@ -1,4 +1,4 @@
-const requestURL = "json/vehicles.json";
+const requestURL = "https://iodaniel.github.io/scoots/json/vehicles.json";
 
 fetch(requestURL)
     .then(function (response) {
@@ -22,7 +22,7 @@ fetch(requestURL)
                 
                 
 
-                image.setAttribute('src', 'images/' + vehicle[i].photo);
+                image.setAttribute('src',  + vehicle[i].photo);
                 image.setAttribute('alt', name.textContent + '-' + vehicle[i].order);
                 card.appendChild(image);
 
