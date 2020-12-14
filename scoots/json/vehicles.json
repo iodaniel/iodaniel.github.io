@@ -8,7 +8,7 @@
             "reservationfull": "$30",
             "walkhalf": "$25",
             "walkfull": "$35",
-            "image": "Honda_Metro.jpg"
+            "photo": "Honda_Metro.jpg"
         },
         {
             "name": "Honda Dio Scooter",
@@ -18,7 +18,7 @@
             "reservationfull": "$40",
             "walkhalf": "$35",
             "walkfull": "$45",
-            "image": "images/HondaDio.jpg"
+            "photo": "images/HondaDio.jpg"
         },
         {
             "name": "Honda PCX150 Scooter",
@@ -28,7 +28,7 @@
             "reservationfull": "$50",
             "walkhalf": "$45",
             "walkfull": "$55",
-            "image": "images/Honda_PRX2.jpg"
+            "photo": "images/Honda_PRX2.jpg"
         },
         {
             "name": "Honda Pioneer ATV",
@@ -38,7 +38,7 @@
             "reservationfull": "$70",
             "walkhalf": "$60",
             "walkfull": "$80",
-            "image": "images/Honda_Pionner.jpg"
+            "photo": "images/Honda_Pionner.jpg"
         },
         {
             "name": "Jeep Wrangler - 2 door",
@@ -48,7 +48,7 @@
             "reservationfull": "$85",
             "walkhalf": "$70",
             "walkfull": "$90",
-            "image": "images/jeep2.jpg"
+            "photo": "images/jeep2.jpg"
         },
         {
             "name": "Jeep Wrangler - 4 door with A/C",
@@ -58,7 +58,7 @@
             "reservationfull": "$100",
             "walkhalf": "$85",
             "walkfull": "$125",
-            "image": "images/jeep_4.jpg"
+            "photo": "images/jeep_4.jpg"
         }
     ]
     }

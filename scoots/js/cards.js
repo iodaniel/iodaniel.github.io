@@ -22,7 +22,7 @@ fetch(requestURL)
                 
                 
 
-                image.setAttribute('src',  + vehicle[i].image);
+                image.setAttribute('src',  + vehicle[i].photo);
                 image.setAttribute('alt', name.textContent + '-' + vehicle[i].order);
                 card.appendChild(image);
 
