@@ -43,28 +43,47 @@
                   <source media="(max-width: 1123px)" srcset="images/hero.png">
                   <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
                 </picture>  
-                <div class="hero-text" >
-                    <h1>Town infor</h1>
-                </div>
+              
+         
+            <h1>Contact Us</h1>
+            
+            
+            <form method= "get" action="thanks.html">
+                <fieldset>
+                <legend>Personal Information</legend>
+                    <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+                    <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"></label>
+                </fieldset>
+                <fieldset>
+                <legend>Tour package</legend>
                 
-                <div class="cards"></div>
+                    <label class="top">Reservation Date<input type="date" name="reservation"></label>
+                    
+                        <label class="top">Tour Available
+                            <select name="tour_info">
+                                <option value="">Select Tour ...&#9662;</option>
+                                <option value="cozumel">Cozumel</option>
+                                <option value="Isla Mujeres">Isla Mujeres</option>
+                                <option value="Chichulub">Chichulub</option>
+                            </select>
+                            </label>
+                    
+                    <label class="top">
+                        Additional Information
+                        <textarea class="info" name="comment"></textarea>
+                    </label>
+            
+                </fieldset>
 
-            <div class=contact>
-            <picture>
-              <source media="(max-width: 350px)" srcset="images/map159px.jpg">
-                <source media="(max-width: 959px)" srcset="images/map421px.jpg">
-                <source media="(min-width: 960px)" srcset="images/map631px.jpg">
-                <img class="map" src="images/map.jpg" alt="map of Preston">
-            </picture>
-           
-            <div class=info>
-               
-            <h2>Contact Information</h2>
-            <br>
-            <h3>Weather Zen Club</h3>
-                <p><span> &#x1F4CD;</span>Preston, ID </p>
-                <p><span> &#128222;</span>Phone (999)999-9898</p>
-                <p><span>&#128231; </span>Email info@weatherzen.club</p>
+                <input type="submit" value="Request a quoate"  class="submitBtn">
+            </form>
+      
+          
+            <h3>Scoots Rent a scooter online</h3>
+                <p><span> &#x1F4CD;</span>Cozumel, Mexico</p>
+                <p><span> &#128222;</span>Phone +52(999)548-8945</p>
+                <p><span>&#128231; </span>Email info@scoots.com</p>
             <br>
             <ul class="social_list">
                 <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a></li>
@@ -82,7 +101,7 @@
             <p>2020 | &copy; Daniel Martinez | El Paso, TX USA|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a> <a href="home-wireframe.html">Wireframe</a>
             <a href="../index.html">Assignment Portal</a>
         </footer>
-        <script src="js/cards.js"></script>
+        <script src="#"></script>
         <script  src="js/message.js"></script>
         <script  src="js/weather.js"></script>
         <script  src="js/date.js"></script>

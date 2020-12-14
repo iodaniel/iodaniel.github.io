@@ -147,6 +147,79 @@ nav ul.hide{
 /*----------BODY------------*/
 
 
+/*------------FORM--------------*/
+form fieldset{
+    margin: 2rem 0;
+    border:1px solid #445ba9;
+  }
+  
+form label.top, form div{
+    display: block;
+    padding-top:1rem;
+    color: #4c6085;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: JetBrains Mono;
+  }
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 20rem;
+    background-color:white;
+  }
+  
+form input.submitBtn {
+    border: none;
+    background-color: #E7BB41;
+    color: #393E41;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: JetBrains Mono;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 0px;
+    width: 96%;
+    max-width: 20rem;
+  }
+  
+form label.top input:required{
+    border-left: #ff3300 solid 6px;
+  }
+
+form label.top input:required:valid{
+    border-left: #00cc00 solid 6px;
+  }
+
+legend{
+    font-size: 1.2rem;
+    font-family:JetBrains Mono;
+    font-weight: 800;
+    color:#4c6085;
+}
+
+form label.top input, form label.top textarea{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+
+}
+
+
 
 
 
