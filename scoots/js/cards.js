@@ -19,6 +19,8 @@ fetch(requestURL)
                 let walkfull = document.createElement('p');
                 let reservationhalf= document.createElement('p')
                 let reservationfull = document.createElement('p');
+                let button= document.createElement('button');
+                let anchor = document.createElement('a');
                 
                 
 
@@ -38,14 +40,30 @@ fetch(requestURL)
                 walkfull.textContent = 'Walk-in rent for full day cost:' + ' ' + vehicle[i].walkfull;
                 card.appendChild(walkfull);
 
-                reservationhalf.textContent = 'Reservartion rent for full day cost:' + ' ' + vehicle[i]. reservationhalf;
-                card.appendChild( reservationhalf);
+                reservationhalf.textContent = 'Reservartion rent for full day cost:' + ' ' + vehicle[i].reservationhalf;
+                card.appendChild(reservationhalf);
 
-                reservationfull.textContent = 'Reservation rent for full day cost:' + ' ' + vehicle[i]. reservationfull;
-                card.appendChild( reservationfull);
+                reservationfull.textContent = 'Reservation rent for full day cost:' + ' ' + vehicle[i].reservationfull;
+                card.appendChild(reservationfull);
               //  population.textContent = 'Population:' + ' ' + cities[i].currentPopulation;
               //  card.appendChild(population);
+                anchor.textContent = vehicle[i].anchor;
+                card.appendChild(anchor);
                 
+                //anchor.setAttribute("onclick", "return myFunc('" + vehicle[i] + "')");
+                //anchor.innerHTML = vehicle[i];
+                anchor.href = "reservation.html";
+                anchor.appendChild(button)
+                button.appendChild(document.createTextNode("Rent Me"));
+                //anchor.textContent = vehicle[i].a;
+                //button.appendChild(document.createTextNode("Rent Me"));
+                //a.setAttribute('href', '#' + vehicle[i].url);
+                //button.appendChild(anchor)
+
+
+                //a.appendChild(document.createTextNode())
+                
+             // a href='reservation.html'><button class='myButton'>Book Now</button>
                // rain.textContent = 'Annual Rain Fall:' + ' ' + cities[i].averageRainfall;
               //  card.appendChild(rain);
               

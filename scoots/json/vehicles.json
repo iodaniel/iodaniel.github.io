@@ -8,7 +8,8 @@
             "reservationfull": "$30",
             "walkhalf": "$25",
             "walkfull": "$35",
-            "photo": "Honda_Metro.jpg"
+            "photo": "Honda_Metro.jpg",
+            "url": "reservation.html"
         },
         {
             "name": "Honda Dio Scooter",
