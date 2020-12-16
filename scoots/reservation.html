@@ -42,10 +42,77 @@
                   <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
                 </picture>  
                 <div class="hero-text" >
-                    <h1>Town infor</h1>
+                    <h1>Reservation Form</h1>
                 </div>
+
+            
+            
+            
+            <form method= "get" action="thanks.html">
+                <fieldset>
+                <legend>Contact Information</legend>
+                    
+                    <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+                    <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required></label>
+                </fieldset>
+                <fieldset>
+                <legend>Select a vehicle</legend>
                 
-                <div class="cards"></div>
+                    <label class="top">Reservation Date<input type="date" name="reservationDate"></label>
+                    <label class="top">Vehicle<input list="vehicle_types" name="vehicle"/>
+                        <datalist id="vehicle_types">
+                            <option value="Honda">
+                            <option value="Honda">
+                            <option value="Honda">
+                            <option value="Jeep">
+                            <option value="Jeep">
+                        </datalist>
+                    </label>
+                   
+                    <label class="rating" >Number of people</label> : <input type="range" id="rating" value="1" min="1" max="5" step="1" 
+                          list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                          <span id="">1</span><br>
+                          <span>Number of crew is determinate the usability of the vehicle </span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                    <label class="top">Available Tours
+                    <select name="storm-Region">
+                        <option value="">Select Tour ...&#9662;</option>
+                        <option value="">Aqua Tour</option>
+                        <option value="">Cocodrile Tour</option>
+                        <option value="">Arquea Tour</option>
+                        <option value="">No Thanks</option>
+                    </select>
+                    </label>
+                    <label class="top">Accept terms and conditions</label>
+                    <div>
+                      <label class="sbs">
+                        <input type="radio" name="in-dangerLevel" value="yes"> Yes
+                      </label>
+                      <label class="sbs">
+                          <input type="radio" name="in-dangerLevel" value="no"> No
+                      </label>
+                    </div>
+                    
+                    <label class="top">
+                        Additional Information
+                        <textarea class="info" name="comment"></textarea>
+                    </label>
+            
+                </fieldset>
+
+                <input type="submit" value="Pay NOW"  class="submitBtn">
+            </form>
+                
+               
 
                 <div class="contact">
                     <h3>Location and contact infomation: </h3>

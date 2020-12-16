@@ -1,0 +1,37 @@
+{
+    "tour": [
+        {
+            "name": "Cocodrilo Tour",
+            "type": "Boat trip",
+            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "cost_person": "$29.99",
+            "cost_group": "$99.99",
+            "photo": "cocodrilo.jpg"
+            
+        },
+        {
+            "name": "Cocodrilo Tour",
+            "type": "Boat trip",
+            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "cost_person": "$39.99",
+            "cost_group": "$120.00",
+            "photo": "cancun.jpg"
+        },
+        {
+            "name": "Cocodrilo Tour",
+            "type": "Boat trip",
+            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "cost_person": "$45",
+            "cost_group": "$150.00",
+            "photo": "cenote.jpg"
+        },
+        {
+            "name": "Cocodrilo Tour",
+            "type": "Boat trip",
+            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "cost_person": "$35",
+            "cost_group": "$140",
+            "photo": "tulum.jpg"
+        }
+    ]
+    }
