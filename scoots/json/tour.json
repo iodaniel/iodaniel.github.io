@@ -3,7 +3,7 @@
         {
             "name": "Cocodrilo Tour",
             "type": "natural wild extrem.",
-            "description": "This tour is full of adventure, you can see wild live its explendor",
+            "description": "you can see wild live its explendor",
             "cost_person": "$29.99",
             "cost_group": "$99.99",
             "photo": "cocodrilo.jpg"
@@ -11,15 +11,15 @@
         },
         {
             "name": "Riviera Maya Tour",
-            "type": "For  all the family",
-            "description": "**SPECIAL OFFERT** 30% OFF, This tour is for all the family and know about the Maya cultute.",
+            "type": "for  all the family",
+            "description": "the Maya cultute.",
             "cost_person": "$39.99",
             "cost_group": "$120.00",
             "photo": "cancun.jpg"
         },
         {
             "name": "Cenotes Tour",
-            "type": "For all the family",
+            "type": "for all the family",
             "description": "Ground yourself with the mother earth and natural adventure for all the family",
             "cost_person": "$45",
             "cost_group": "$150.00",
