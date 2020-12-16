@@ -38,9 +38,11 @@
                 <picture class="hero-image">
                   <source media="(max-width: 450px)" srcset="images/stone400.png">
                   <source media="(max-width: 770px)" srcset="images/stone600.png">
-                  <source media="(max-width: 1123px)" srcset="images/hero.png">
-                  <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
+                  <source media="(max-width: 1123px)" srcset="images/hero_ser.png">
+                  <img src="images/hero_res.jpg" alt="Hero imagen sunset Cozumel">
                 </picture>  
+                <h3 class='hero_text'>Reserve your unfogetable adventure with us!</h3>
+             
                 <div class="hero-text" >
                     <h1>Reservation Form</h1>
                 </div>
@@ -54,7 +56,7 @@
                     
                     <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
                     <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
-                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required></label>
+                    <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"></label>
                 </fieldset>
                 <fieldset>
                 <legend>Select a vehicle</legend>
@@ -87,9 +89,10 @@
                     <label class="top">Available Tours
                     <select name="storm-Region">
                         <option value="">Select Tour ...&#9662;</option>
-                        <option value="">Aqua Tour</option>
-                        <option value="">Cocodrile Tour</option>
-                        <option value="">Arquea Tour</option>
+                        <option value="">Cocodrilo Tour</option>
+                        <option value="">Riviera Maya Tour</option>
+                        <option value="">Cenotes Tour</option>
+                        <option value="">Tulum Tour</option>
                         <option value="">No Thanks</option>
                     </select>
                     </label>
@@ -143,7 +146,6 @@
             <p>2020 | &copy; Daniel Martinez | El Paso, TX USA|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a> <a href="home-wireframe.html">Wireframe</a>
             <a href="../index.html">Assignment Portal</a>
         </footer>
-        <script src="js/cards.js"></script>
         <script  src="js/message.js"></script>
         <script  src="js/weather.js"></script>
         <script  src="js/date.js"></script>

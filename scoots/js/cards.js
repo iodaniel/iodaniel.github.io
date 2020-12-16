@@ -31,19 +31,19 @@ fetch(requestURL)
                 name.textContent = vehicle[i].name;
                 card.appendChild(name);
                 
-                 crew.textContent ="Number of persons:" +' '+vehicle[i].crew;
+                 crew.textContent ="Crew capacity:" +' '+vehicle[i].crew;
                  card.appendChild(crew);
                 
-                walkhalf.textContent = 'Walk-in rent for half day cost:' + ' ' + vehicle[i].walkhalf;
+                walkhalf.textContent = 'Walk-in half day:' + ' ' + vehicle[i].walkhalf;
                 card.appendChild(walkhalf);
                 
-                walkfull.textContent = 'Walk-in rent for full day cost:' + ' ' + vehicle[i].walkfull;
+                walkfull.textContent = 'Walk-in full day:' + ' ' + vehicle[i].walkfull;
                 card.appendChild(walkfull);
 
-                reservationhalf.textContent = 'Reservartion rent for full day cost:' + ' ' + vehicle[i].reservationhalf;
+                reservationhalf.textContent = 'Reservartion full day:' + ' ' + vehicle[i].reservationhalf;
                 card.appendChild(reservationhalf);
 
-                reservationfull.textContent = 'Reservation rent for full day cost:' + ' ' + vehicle[i].reservationfull;
+                reservationfull.textContent = 'Reservation full day:' + ' ' + vehicle[i].reservationfull;
                 card.appendChild(reservationfull);
               //  population.textContent = 'Population:' + ' ' + cities[i].currentPopulation;
               //  card.appendChild(population);
