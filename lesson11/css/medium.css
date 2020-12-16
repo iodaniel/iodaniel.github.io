@@ -48,7 +48,7 @@ figure:hover {
 
     main div.cards{
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr 1fr;
     }
     main div.cards img p h3 {
         width: 350px;

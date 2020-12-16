@@ -21,6 +21,7 @@ fetch(requestURL)
                 let reservationfull = document.createElement('p');
                 let button= document.createElement('button');
                 let anchor = document.createElement('a');
+                let extra = document.createElement('p')
                 
                 
 
@@ -45,6 +46,9 @@ fetch(requestURL)
 
                 reservationfull.textContent = 'Reservation full day:' + ' ' + vehicle[i].reservationfull;
                 card.appendChild(reservationfull);
+
+                extra.textContent = 'Extra fitures:' + ' ' + vehicle[i].extra;
+                card.appendChild(extra);
               //  population.textContent = 'Population:' + ' ' + cities[i].currentPopulation;
               //  card.appendChild(population);
                 anchor.textContent = vehicle[i].anchor;

@@ -52,13 +52,14 @@
             "photo": "jeep2.jpg"
         },
         {
-            "name": "Jeep Wrangler - 4 door with A/C",
+            "name": "Jeep Wrangler - 4 door",
             "type": "car",
             "crew": "5 persons",
             "reservationhalf": "$70",
             "reservationfull": "$100",
             "walkhalf": "$85",
             "walkfull": "$125",
+            "extra": "A/C, Turbo, 4x4",
             "photo": "jeep_4.jpg"
         }
     ]

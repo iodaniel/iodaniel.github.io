@@ -2,8 +2,8 @@
     "tour": [
         {
             "name": "Cocodrilo Tour",
-            "type": "Boat trip",
-            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "type": "natural wild extrem.",
+            "description": "This tour is full of adventure, you can see wild live its explendor",
             "cost_person": "$29.99",
             "cost_group": "$99.99",
             "photo": "cocodrilo.jpg"
@@ -11,24 +11,24 @@
         },
         {
             "name": "Riviera Maya Tour",
-            "type": "Boat trip",
-            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "type": "For  all the family",
+            "description": "**SPECIAL OFFERT** 30% OFF, This tour is for all the family and know about the Maya cultute.",
             "cost_person": "$39.99",
             "cost_group": "$120.00",
             "photo": "cancun.jpg"
         },
         {
             "name": "Cenotes Tour",
-            "type": "Boat trip",
-            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "type": "For all the family",
+            "description": "Ground yourself with the mother earth and natural adventure for all the family",
             "cost_person": "$45",
             "cost_group": "$150.00",
             "photo": "cenote.jpg"
         },
         {
             "name": "Tulum Tour",
-            "type": "Boat trip",
-            "description": "This tour is full of adventure, you can see wild live in his explendor",
+            "type": "for all family",
+            "description": "Visit Tulum with all the family and learn more about the Maya culture.",
             "cost_person": "$35",
             "cost_group": "$140",
             "photo": "tulum.jpg"
