@@ -10,7 +10,7 @@
             
         },
         {
-            "name": "Cocodrilo Tour",
+            "name": "Riviera Maya Tour",
             "type": "Boat trip",
             "description": "This tour is full of adventure, you can see wild live in his explendor",
             "cost_person": "$39.99",
@@ -18,7 +18,7 @@
             "photo": "cancun.jpg"
         },
         {
-            "name": "Cocodrilo Tour",
+            "name": "Cenotes Tour",
             "type": "Boat trip",
             "description": "This tour is full of adventure, you can see wild live in his explendor",
             "cost_person": "$45",
@@ -26,7 +26,7 @@
             "photo": "cenote.jpg"
         },
         {
-            "name": "Cocodrilo Tour",
+            "name": "Tulum Tour",
             "type": "Boat trip",
             "description": "This tour is full of adventure, you can see wild live in his explendor",
             "cost_person": "$35",

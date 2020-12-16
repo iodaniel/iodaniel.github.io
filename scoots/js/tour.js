@@ -6,55 +6,55 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);  
-        const vehicle = jsonObject['rental'];
+        const tours = jsonObject['tour'];
 
-        for (let i = 0; i < vehicle.length; i++) {
+        for (let i = 0; i < tours.length; i++) {
 
-                let card = document.createElement('section')
-                let name = document.createElement('h2')
+                let card = document.createElement('section');
+                let name = document.createElement('h2');
                 let image = document.createElement('img');
-                let crew = document.createElement('p')
+                
+                let type = document.createElement('p');
+                let description = document.createElement('p');
+                let cost_person = document.createElement('p');
+                let cost_group= document.createElement('p')
+               
 
-                let walkhalf = document.createElement('p');
-                let walkfull = document.createElement('p');
-                let reservationhalf= document.createElement('p')
-                let reservationfull = document.createElement('p');
                 let button= document.createElement('button');
                 let anchor = document.createElement('a');
                 
                 
 
-                image.setAttribute('src', 'images/' + vehicle[i].photo);
-                image.setAttribute('alt', name.textContent + '-' + vehicle[i].order);
+                image.setAttribute('src', 'images/' + tours[i].photo);
+                image.setAttribute('alt', name.textContent + '-' + tours[i].order);
                 card.appendChild(image);
 
-                name.textContent = vehicle[i].name;
+                name.textContent = tours[i].name;
                 card.appendChild(name);
                 
-                 crew.textContent ="Number of persons:" +' '+vehicle[i].crew;
-                 card.appendChild(crew);
+                 type.textContent ="Your adventure will be by" +' '+tours[i].type;
+                 card.appendChild(type);
                 
-                walkhalf.textContent = 'Walk-in rent for half day cost:' + ' ' + vehicle[i].walkhalf;
-                card.appendChild(walkhalf);
+                description.textContent = 'Your tour will provide an extrem experience with' + ' ' + tours[i]. description;
+                card.appendChild(description);
                 
-                walkfull.textContent = 'Walk-in rent for full day cost:' + ' ' + vehicle[i].walkfull;
-                card.appendChild(walkfull);
+                cost_person.textContent = 'Cost per person:'+ ' ' + tours[i].cost_person;
+                card.appendChild(cost_person);
 
-                reservationhalf.textContent = 'Reservartion rent for full day cost:' + ' ' + vehicle[i].reservationhalf;
-                card.appendChild(reservationhalf);
+                cost_group.textContent = 'Cost per group:' + ' ' + tours[i].cost_group;
+                card.appendChild(cost_group);
 
-                reservationfull.textContent = 'Reservation rent for full day cost:' + ' ' + vehicle[i].reservationfull;
-                card.appendChild(reservationfull);
+              
               //  population.textContent = 'Population:' + ' ' + cities[i].currentPopulation;
               //  card.appendChild(population);
-                anchor.textContent = vehicle[i].anchor;
+                anchor.textContent = tours[i].anchor;
                 card.appendChild(anchor);
                 
                 //anchor.setAttribute("onclick", "return myFunc('" + vehicle[i] + "')");
                 //anchor.innerHTML = vehicle[i];
                 anchor.href = "reservation.html";
                 anchor.appendChild(button)
-                button.appendChild(document.createTextNode("Rent Me"));
+                button.appendChild(document.createTextNode("Reserve Now"));
                 //anchor.textContent = vehicle[i].a;
                 //button.appendChild(document.createTextNode("Rent Me"));
                 //a.setAttribute('href', '#' + vehicle[i].url);
