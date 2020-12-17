@@ -41,7 +41,8 @@
                   <source media="(max-width: 1123px)" srcset="images/hero_ser.png">
                   <img src="images/hero_res.jpg" alt="Hero imagen sunset Cozumel">
                 </picture>  
-                <h3 class='hero_text'>Reserve your unfogetable adventure with us!</h3>
+                <h3 class='hero_text'>Reserve your 
+                    unforgettable adventure with us!</h3>
              
                 <div class="hero-text" >
                     <h1>Reservation Form</h1>
@@ -50,18 +51,20 @@
             
             
             
-            <form method= "get" action="thanks.html">
+            <form method= "get" action="confirmation.html">
                 <fieldset>
                 <legend>Contact Information</legend>
                     
                     <label class="top">Full Name: *<input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
                     <label class="top">Email: <input type="email" name="email" placeholder="example@gmail.com"></label>
                     <label class="top">Phone: *<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"></label>
+                    <label class="top">Country: *<input type="text" name="country" required autofocus pattern="[A-Za-z]{5,}"></label>
                 </fieldset>
                 <fieldset>
                 <legend>Select a vehicle</legend>
                 
-                    <label class="top">Reservation Date<input type="date" name="reservationDate"></label>
+                    <label class="top">Start Date<input type="date" name="reservationDate"></label>
+                    <label class="top">End Date<input type="date" name="reservationDate"></label>
                     <label class="top">Vehicle<input list="vehicle_types" name="vehicle"/>
                         <datalist id="vehicle_types">
                             <option value="Honda Metro Scooter">
@@ -96,24 +99,25 @@
                         <option value="">No Thanks</option>
                     </select>
                     </label>
-                    <label class="top">Accept terms and conditions</label>
+                    <label class="top">Rent duration:</label>
                     <div>
                       <label class="sbs">
-                        <input type="radio" name="in-dangerLevel" value="yes"> Yes
+                        <input type="radio" name="in-dangerLevel" value="yes"> Half-day
                       </label>
                       <label class="sbs">
-                          <input type="radio" name="in-dangerLevel" value="no"> No
+                          <input type="radio" name="in-dangerLevel" value="no"> Full-dat
                       </label>
                     </div>
                     
+                    
                     <label class="top">
-                        Additional Information
+                       Special Accommodations:
                         <textarea class="info" name="comment"></textarea>
                     </label>
             
                 </fieldset>
 
-                <input type="submit" value="Pay NOW"  class="submitBtn">
+                <input type="submit" value="Make a Reservation"  class="submitBtn">
             </form>
                 
                

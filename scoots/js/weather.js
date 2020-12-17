@@ -6,3 +6,4 @@ function toggleMenu(){
   function toggleMenuClosed(){
     document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
   }
+ 

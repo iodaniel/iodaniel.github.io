@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="favicon.ico"><!--Add the favicon-->
-    <title>Scooter Rent in Cozumel</title>
+    <title>Confirmation ticket</title>
+   
 </head>
 <body onload="showAlert();">
     <div id= "message">
@@ -30,23 +31,29 @@
                             <li><a href="../scoots/home.html">Home</a></li>
                             <li><a href="../scoots/reservation.html">Reservation</a></li>
                             <li><a href="../scoots/tour.html">Tour</a></li>
-                            <li class="active"><a href="../scoots/rental.html">Rental</a></li>
+                            <li><a href="../scoots/rental.html">Rental</a></li>
                             <li><a href="../scoots/contact.html">Contact Us</a></li>
                         </ul>
             </nav>
             <div class= "container">
-                <picture class="hero-image">
-                  <source media="(max-width: 450px)" srcset="images/stone400.png">
-                  <source media="(max-width: 770px)" srcset="images/stone600.png">
-                  <source media="(max-width: 1123px)" srcset="images/hero.png">
-                  <img src="images/hero.jpg" alt="Hero imagen of scooter in Cozumel">
-                </picture>  
-                <h3 class='hero_text'>Rent a vehicle today!!</h3>
-                <div class="hero-text" >
-                    <h1>Available vehicles</h1>
-                </div>
                 
-                <div class="cards"></div>
+                <h2 class='hero_text'>Your confirmation number is:</h2>
+                <p class='hero_text' id="conf"></p>
+                <div class=hero_text >
+                    <h4>Important Rental Information</h4><br>
+                        <li>A $50 security deposit is required to confirm reservations.</li><br>
+                        <li>All rentals subject to a 5% local toursim fee.</li><br>
+                        <li>A valid drivers license is required in hand at time of rental.</li><br>
+                        <li>No one under 12 years of age are allowed to ride on the scooters.</li><br>
+                        <li>Fuel charge not included.</li><br>
+                        <li>Unlimited mileage.</li><br>
+                        <li>Liability insurance is free of charge.</li><br>
+                        <li>Reservations rate requires 24 hour prior notification.</li><br>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li><br>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li><br>
+                        <li>Rentals may be returned to either location.</li><br>
+                </div>
+      
 
                 <div class="contact">
                     <h3>Location and contact infomation: </h3>
@@ -73,10 +80,10 @@
         </main>
         <footer>
            <!--for some reason I was unable to render the js file date.js-->
-            <p>2020 | &copy; Daniel Martinez | El Paso, TX USA|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a> <a href="home-wireframe.html">Wireframe</a>
+            <p>2020 | &copy; Daniel Martinez | El Paso, TX USA|- <span id="demo"></span> </p><a href="http://www.byui.edu">BYU-Idaho</a> 
             <a href="../index.html">Assignment Portal</a>
         </footer>
-        <script src="js/cards.js"></script>
+        
         <script  src="js/message.js"></script>
         <script  src="js/weather.js"></script>
         <script  src="js/date.js"></script>
