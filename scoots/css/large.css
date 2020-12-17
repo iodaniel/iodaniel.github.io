@@ -173,4 +173,7 @@
     font-weight:bold;
     padding:12px 48px;
 }
+iframe{
+    border-width: 0px;
+}
 }

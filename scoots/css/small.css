@@ -445,3 +445,6 @@ div.cards button:hover {
         width: 50%;
     
     }
+    iframe{
+        border-width: 0px;
+    }
