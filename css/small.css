@@ -34,15 +34,19 @@ body {
 }
 h1{
     font-size: 30px;
-    color: #fff;
+    color: #184E77;
     text-align: center;
     border-bottom: 3px solid #2883e3;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 
 }
 h2{
     font-size: 24px;
     text-align:left;
+    color: #fff;
+}
+h3, h4, p{
+    color: #fff;
 }
 
 header, main, footer{
@@ -50,13 +54,13 @@ header, main, footer{
     padding: 2rem;
     max-width: 1080px;
     border-radius: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 header, footer, footer a {
     text-align: center;
     background-color: #cecece;
     color: #2883e3;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 
 }
 
