@@ -19,6 +19,7 @@ h2{
     font-size: 24px;
     text-align:left;
 }
+
 header, main, footer{
     margin: 2rem auto;
     padding: 2rem;
@@ -35,9 +36,10 @@ header, footer, footer a {
 }
 
 header img {
-    width: 400px;
-    height: auto;
-    float: right;
+    
+    width: 200px;
+	height: 200px;
+	border-radius: 50%;
 }
 
 footer {
