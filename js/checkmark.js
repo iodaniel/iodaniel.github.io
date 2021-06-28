@@ -75,7 +75,7 @@ function easeInOut(t) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  var phrases = shuffleArray(["Machine Learning Services","Search Engine Optimization (SEO)","WebApps","Websites","Machine Learning Services", "Natural Language Processing (NLP)","Search Engine Optimization (SEO)", "Sentiment Analysis","WebApps","Websites"]);
+  var phrases = shuffleArray(["Machine Learning Services","Search Engine Optimization (SEO)","WebApp Development","Website Development","AI","Computer vision", "Natural Language Processing (NLP)","Search Engine Optimization (SEO)", "Sentiment Analysis","WebApps","Web Design","Data Science Consultant", "Data Visualization" ]);
   addPhrasesToDocument(phrases);
   var start_time = new Date().getTime();
   var upward_moving_group = document.getElementById("phrases");
