@@ -1,0 +1,654 @@
+<!DOCTYPE html><html><head>
+      <title>project4_report</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\iodan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.0\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="span-stylecolorpurpleprediction-with-classificationspan"><span style="color:purple">Prediction with classification</span></h1>
+
+<p>Author: Daniel Martinez</p>
+<p>Project 4 provides a dataset of a house built in the state of colorado to predict the houses are created before 1980, this problem will be resolved classification model, the classification model that is used is a GradientBoostingClassifier().</p>
+<h1 class="mume-header" id="span-stylecolorpurpleelevator-pitchspan"><span style="color:purple">Elevator Pitch</span></h1>
+
+<p>The objective of the project is to create a prediction for houses built before 1980 the classification model provides an accuracy of 91% with the correlation feature that are the number of bathrooms and square footage.</p>
+<h2>The evaluation of the model provides a 96% of accuracy score or AUC.</h2>
+<h1 class="mume-header" id="span-stylecolorpurpletechnical-detailsspan"><span style="color:purple">Technical Details</span></h1>
+
+<p>The installation of library scikit-learn in your python environment using the following code:</p>
+<pre data-role="codeBlock" data-info class="language-"><code>pip install -U scikit-learn
+</code></pre><p><span style="color: green">Note:</span></p>
+<p>the installation of the scikit-learn provides access to the classification model and regression model part of the classification model as follows:</p>
+<ol>
+<li>DecisionTreeClassifier()</li>
+<li>GaussianNB()</li>
+<li>GradientBoostingClassifier()</li>
+<li>Others</li>
+</ol>
+<p>the importance of split the data to have a segmentation of the data in test and train data the data for evaluation is the test data and normally is and an average of the 30% of the total of the data we use the following example:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python">X_train<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>X_pred<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.34</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">76</span><span class="token punctuation">)</span>
+</pre><p>The &quot;X&apos; by convention is considerate the feature data and the &apos;y&apos; is considered the target variable or the potential prediction.</p>
+<hr>
+<h1 class="mume-header" id="span-stylecolorpurplegrand-questionsspan"><span style="color:purple">Grand Questions</span></h1>
+
+<p>Grand Questions:</p>
+<ol>
+<li>Create 2-3 charts that evaluate potential relationships between the home variables and before1980.</li>
+</ol>
+<p>In the graph, we see the relationship between the year of build with the number of bath that information can help to create a model for predict the year of the build before 1980. proving the information that before 1980 the number of the bath are lest in comparision after 1980.<br>
+<img src="screenshot/graph3.png" alt></p>
+<p>In the graph we see the relationship between the year of build with square footage that information can help to create a model for predicting the year of the build before 1980, the graph provides information that before 1980 the houses are bigger in comparison with house build after 1980.<br>
+<img src="screenshot/graph1.png" alt></p>
+<p>In the graph, we see the relationship between the year of build with the number of bath that information can help to create a model for predict the year of the build before 1980.</p>
+<p><img src="screenshot/boxplot.png" alt></p>
+<ol start="2">
+<li>Can you build a classification model (before or after 1980) that has at least 90% accuracy for the state of Colorado to use (explain your model choice and which models you tried)?</li>
+</ol>
+<pre data-role="codeBlock" data-info="python" class="language-python">X_train<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>X_pred<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.34</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">76</span><span class="token punctuation">)</span>
+clf_df <span class="token operator">=</span> GradientBoostingClassifier<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#DecisionTreeClassifier(random_state=70)#inizalize the decision tree</span>
+clf_df <span class="token operator">=</span> clf_df<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+<span class="token comment">#clf = GradientBoostingClassifier()</span>
+<span class="token comment">#clf = clf.fit(X_train, y_train)</span>
+<span class="token comment">#predict_p =  clf.predict(X_test)</span>
+<span class="token comment">#clf_df = classifier</span>
+<span class="token comment"># %%</span>
+y_pred <span class="token operator">=</span>clf_df<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+</pre><p>I create a model to create a prediction with 91% of accuracy to have these values I tried a different classification model if we consider that the data before 1980 proving only two values 0 is not before 1980 and 1 is before 1980, the first classification model I did was DecisionTreeClassifie() that model was with 90% of accuracy but the problem with this model is that I was unable to plot the decision tree that the reason I think to create another model, the second classification model I create was GradientBoostingClassifier() that one provides an accuracy of 91%, the last classification model that I use was GaussianNB() but was not too efficient comparison with GradientBoostingClassifier().</p>
+<p>GradientBoostingClassifier() was my final choice.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0.89</td>
+<td>0.85</td>
+<td>0.87</td>
+<td>2572</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.91</td>
+<td>0.94</td>
+<td>0.92</td>
+<td>4302</td>
+</tr>
+<tr>
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.90</td>
+<td>6874</td>
+</tr>
+<tr>
+<td>macro avg</td>
+<td>0.90</td>
+<td>0.89</td>
+<td>0.89</td>
+<td>6874</td>
+</tr>
+<tr>
+<td>weighted avg</td>
+<td>0.90</td>
+<td>0.90</td>
+<td>0.90</td>
+<td>6874</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>Will you justify your classification model by detailing the most important features in your model (a chart and a description are a must)?<br>
+The classification model one of the most important features to find the prediction that is before1980 and yrbuilt as the heatmap the highest correlation with that target variable are numbdrm and finbsmnt that two have the highest correlation that the reason was to use it for the graph above.<br>
+<img src="screenshot/heat.png" alt></li>
+</ol>
+<p>The pairplot provides crucial information relevant to the correlation of the features with the predicted variable or target variable.<br>
+<img src="screenshot/pairplot.png" alt><br>
+4. Can you describe the quality of your classification model using 2-3 evaluation metrics? You need to provide an interpretation of each evaluation metric when you provide the value.</p>
+<p>The evaluation of the performance of the model is provide by AUC with a 96%.</p>
+<p><img src="screenshot/roc.png" alt><br>
+This graph provides the most important feature of the test dataset.</p>
+<p><img src="screenshot/features.png" alt></p>
+<hr>
+<h1 class="mume-header" id="span-stylecolorpurpleappendix-python-codespan"><span style="color:purple">Appendix python code</span></h1>
+
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token comment"># %% </span>
+<span class="token comment">#import sys</span>
+<span class="token comment">#!{sys.executable} -m pip install seaborn scikit-learn</span>
+<span class="token comment">#instalation of seaborn. </span>
+
+<span class="token comment"># %%</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np 
+<span class="token keyword">import</span> altair <span class="token keyword">as</span> alt
+<span class="token comment">#import matplotlib </span>
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token comment"># %%</span>
+<span class="token comment"># from sklearn</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split <span class="token comment"># to split the test and training data and run (creation of model selection)</span>
+<span class="token keyword">from</span> sklearn <span class="token keyword">import</span> tree
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>naive_bayes <span class="token keyword">import</span> GaussianNB
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>ensemble <span class="token keyword">import</span> GradientBoostingClassifier
+<span class="token keyword">from</span> sklearn <span class="token keyword">import</span> metrics
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> r2_score
+
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>tree <span class="token keyword">import</span> DecisionTreeClassifier <span class="token comment"># to build a classification tree</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>tree <span class="token keyword">import</span> plot_tree
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> cross_val_score
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> confusion_matrix
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> plot_confusion_matrix
+<span class="token comment"># %%</span>
+<span class="token comment">#</span>
+dwellings_denver <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_denver/dwellings_denver.csv&quot;</span><span class="token punctuation">)</span>
+dwellings_ml <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_ml/dwellings_ml.csv&quot;</span><span class="token punctuation">)</span>
+dwellings_neighborhoods_ml <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_neighborhoods_ml/dwellings_neighborhoods_ml.csv&quot;</span><span class="token punctuation">)</span>   
+alt<span class="token punctuation">.</span>data_transformers<span class="token punctuation">.</span>enable<span class="token punctuation">(</span><span class="token string">&apos;json&apos;</span><span class="token punctuation">)</span> 
+<span class="token comment">#df = pd.read_csv(&quot;https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_denver/dwellings_denver.csv&quot;)</span>
+<span class="token comment"># %%</span>
+dwellings_ml<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+
+<span class="token comment"># %% </span>
+<span class="token comment"># create a new </span>
+df <span class="token operator">=</span> dwellings_ml<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;livearea&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;finbsmnt&apos;</span><span class="token punctuation">,</span> 
+    <span class="token string">&apos;basement&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;yearbuilt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;nocars&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;numbdrm&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;numbaths&apos;</span><span class="token punctuation">,</span> 
+    <span class="token string">&apos;stories&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;yrbuilt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;before1980&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sample<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>
+
+<span class="token comment"># %% </span>
+df
+<span class="token comment"># %%</span>
+dwellings_ml<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+dwellings_ml<span class="token punctuation">[</span><span class="token string">&apos;livearea&apos;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>unique<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token comment">#this dataset did not have any object datatype column. </span>
+<span class="token comment"># %%</span>
+<span class="token comment">#to review if I have any missing values </span>
+df<span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+df<span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>values<span class="token punctuation">.</span><span class="token builtin">any</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># the data did have any null values </span>
+<span class="token comment">#this Justify that my filter dataset did not have any missing values </span>
+<span class="token comment"># %%</span>
+<span class="token builtin">len</span><span class="token punctuation">(</span>dwellings_ml<span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+
+df_duplicate<span class="token operator">=</span> df<span class="token punctuation">.</span>duplicated<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token builtin">sum</span><span class="token punctuation">(</span>df_duplicate<span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+df<span class="token punctuation">.</span>shape
+<span class="token comment"># %%</span>
+df<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># %%</span>
+df<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+df<span class="token punctuation">.</span>skew<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#calculate that Zcode </span>
+<span class="token comment"># %%</span>
+sns<span class="token punctuation">.</span>pairplot<span class="token punctuation">(</span>df<span class="token punctuation">,</span> hue <span class="token operator">=</span> <span class="token string">&apos;before1980&apos;</span><span class="token punctuation">)</span>
+corr <span class="token operator">=</span> df<span class="token punctuation">.</span>drop<span class="token punctuation">(</span>columns <span class="token operator">=</span> <span class="token string">&apos;before1980&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#heatmap.save(&quot;screenshot/heatmap.png&quot;)</span>
+<span class="token comment"># %%</span>
+sns<span class="token punctuation">.</span>heatmap<span class="token punctuation">(</span>corr<span class="token punctuation">,</span> annot <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment"># %%</span>
+dwellings_ml<span class="token punctuation">.</span>nunique<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#This </span>
+<span class="token comment">#%%</span>
+df<span class="token punctuation">.</span>columns
+<span class="token comment"># %%</span>
+<span class="token comment">#alt.Chart(df).mark_circle(size=50).encode(</span>
+<span class="token comment">#    x=&quot;yrbuilt&quot;, </span>
+<span class="token comment">#    y=&quot;before1980&quot;,</span>
+<span class="token comment">#    color =&quot;Original&quot;#,</span>
+    <span class="token comment">#tooltip = []</span>
+<span class="token comment">#)#.interactive()</span>
+<span class="token comment"># %%</span>
+graph1<span class="token operator">=</span> <span class="token punctuation">(</span>alt<span class="token punctuation">.</span>Chart<span class="token punctuation">(</span>df<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+        x <span class="token operator">=</span> alt<span class="token punctuation">.</span>X<span class="token punctuation">(</span><span class="token string">&apos;yrbuilt&apos;</span><span class="token punctuation">,</span> scale<span class="token operator">=</span>alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span>alt<span class="token punctuation">.</span>Axis<span class="token punctuation">(</span><span class="token builtin">format</span><span class="token operator">=</span><span class="token string">&apos;.0f&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        y <span class="token operator">=</span> alt<span class="token punctuation">.</span>Y<span class="token punctuation">(</span><span class="token string">&apos;finbsmnt&apos;</span><span class="token punctuation">,</span> scale<span class="token operator">=</span>alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        color <span class="token operator">=</span> <span class="token string">&apos;before1980:O&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>mark_circle<span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>properties<span class="token punctuation">(</span>width<span class="token operator">=</span><span class="token number">800</span><span class="token punctuation">,</span>
+        height<span class="token operator">=</span><span class="token number">600</span><span class="token punctuation">,</span>
+        title<span class="token operator">=</span><span class="token string">&quot;year of built comparation with square footage&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+graph1<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">&quot;screenshot/graph1.png&quot;</span><span class="token punctuation">)</span>
+graph1
+<span class="token comment"># %%</span>
+dat_count <span class="token operator">=</span> <span class="token punctuation">(</span>df
+    <span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;yrbuilt&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;numbaths&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>agg<span class="token punctuation">(</span>count <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">&apos;nocars&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;size&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    
+<span class="token comment"># %%</span>
+graph3<span class="token operator">=</span><span class="token punctuation">(</span>alt<span class="token punctuation">.</span>Chart<span class="token punctuation">(</span>dat_count<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+        alt<span class="token punctuation">.</span>X<span class="token punctuation">(</span><span class="token string">&apos;yrbuilt:O&apos;</span><span class="token punctuation">,</span>
+            scale <span class="token operator">=</span> alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            axis<span class="token operator">=</span>alt<span class="token punctuation">.</span>Axis<span class="token punctuation">(</span><span class="token builtin">format</span><span class="token operator">=</span><span class="token string">&apos;.0f&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        alt<span class="token punctuation">.</span>Y<span class="token punctuation">(</span><span class="token string">&apos;numbaths:O&apos;</span><span class="token punctuation">,</span>scale <span class="token operator">=</span> alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        color <span class="token operator">=</span> alt<span class="token punctuation">.</span>Color<span class="token punctuation">(</span><span class="token string">&apos;count&apos;</span><span class="token punctuation">,</span> 
+            scale<span class="token operator">=</span>alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span><span class="token builtin">type</span><span class="token operator">=</span><span class="token string">&apos;log&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>mark_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>properties<span class="token punctuation">(</span>width<span class="token operator">=</span><span class="token number">800</span><span class="token punctuation">,</span>
+        height<span class="token operator">=</span><span class="token number">600</span><span class="token punctuation">,</span>
+        title<span class="token operator">=</span><span class="token string">&quot;Year of Built in base of number of bath&quot;</span><span class="token punctuation">)</span>
+        
+<span class="token punctuation">)</span>
+hart_two <span class="token operator">=</span> alt<span class="token punctuation">.</span>Chart<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mark_rule<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+    x<span class="token operator">=</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span>graph3<span class="token operator">+</span>hart_two<span class="token punctuation">)</span><span class="token punctuation">.</span>facet<span class="token punctuation">(</span>row<span class="token operator">=</span><span class="token string">&apos;site&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>dat_count<span class="token punctuation">)</span>
+graph3<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">&quot;screenshot/graph3.png&quot;</span><span class="token punctuation">)</span>
+graph3
+<span class="token comment"># %%</span>
+boxplot <span class="token operator">=</span> <span class="token punctuation">(</span>alt<span class="token punctuation">.</span>Chart<span class="token punctuation">(</span>dat_count<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+        alt<span class="token punctuation">.</span>X<span class="token punctuation">(</span><span class="token string">&apos;yrbuilt:O&apos;</span><span class="token punctuation">,</span>
+            scale <span class="token operator">=</span> alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            axis<span class="token operator">=</span>alt<span class="token punctuation">.</span>Axis<span class="token punctuation">(</span><span class="token builtin">format</span><span class="token operator">=</span><span class="token string">&apos;.0f&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        alt<span class="token punctuation">.</span>Y<span class="token punctuation">(</span><span class="token string">&apos;numbaths&apos;</span><span class="token punctuation">,</span>scale <span class="token operator">=</span> alt<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>zero<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>mark_boxplot<span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>properties<span class="token punctuation">(</span>width<span class="token operator">=</span><span class="token number">650</span><span class="token punctuation">,</span> 
+        height<span class="token operator">=</span><span class="token number">600</span><span class="token punctuation">,</span>
+        title<span class="token operator">=</span><span class="token string">&quot;year built and number of baths&quot;</span><span class="token punctuation">)</span>
+        
+<span class="token punctuation">)</span>
+
+boxplot<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">&quot;screenshot/boxplot.png&quot;</span><span class="token punctuation">)</span>
+boxplot
+<span class="token comment"># %%</span>
+<span class="token comment">#for col in df.select_dtypes(include=[&apos;int&apos;]).columns():</span>
+<span class="token comment">#    print(&apos;We have {} unique values in  {} column : {}&apos;.format(len(df[col].unique()),col, df[col].unique()))</span>
+<span class="token comment">#    print(&apos;---&apos;*30)</span>
+<span class="token comment"># %%</span>
+df<span class="token punctuation">[</span>df<span class="token punctuation">.</span>columns<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">&apos;before1980&apos;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token comment"># %%</span>
+<span class="token comment"># formatting data ready fof the decision tree</span>
+X_pred <span class="token operator">=</span> dwellings_ml<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;yrbuilt&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;before1980&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+y_pred <span class="token operator">=</span> dwellings_ml<span class="token punctuation">.</span>before1980
+<span class="token comment"># %%</span>
+X_pred<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T
+<span class="token comment"># %%</span>
+y_pred<span class="token operator">=</span> dwellings_ml<span class="token punctuation">[</span><span class="token string">&apos;before1980&apos;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+y_pred<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#data that we want to predict </span>
+<span class="token comment"># %%</span>
+<span class="token comment">#one-Hot Encoding, as the dataset looks like the dataset</span>
+<span class="token comment"># is ready to use with the one-Hot Encoding. </span>
+<span class="token comment"># this dataset did not have any object data to transform to the</span>
+<span class="token comment"># to categorical data and use of get_dummies().</span>
+<span class="token comment"># Preeliminary Decision Tree Classifier.</span>
+
+X_train<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>X_pred<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.34</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">76</span><span class="token punctuation">)</span>
+clf_df <span class="token operator">=</span> GradientBoostingClassifier<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#DecisionTreeClassifier(random_state=70)#inizalize the decision tree</span>
+clf_df <span class="token operator">=</span> clf_df<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+<span class="token comment">#clf = GradientBoostingClassifier()</span>
+<span class="token comment">#clf = clf.fit(X_train, y_train)</span>
+<span class="token comment">#predict_p =  clf.predict(X_test)</span>
+<span class="token comment">#clf_df = classifier</span>
+<span class="token comment"># %%</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>y_test<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># %%</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>X_train<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+y_pred <span class="token operator">=</span>clf_df<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+<span class="token comment"># %%</span>
+<span class="token comment"># prediction of 90%</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>metrics<span class="token punctuation">.</span>classification_report<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">#df4 = pd.DataFrame(get_classification_report)</span>
+<span class="token comment">#print(report.to_markdown())</span>
+<span class="token comment">#y_pred</span>
+<span class="token comment"># %%</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>metrics<span class="token punctuation">.</span>confusion_matrix<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span><span class="token punctuation">)</span>
+metrics<span class="token punctuation">.</span>plot_confusion_matrix<span class="token punctuation">(</span>clf_df<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_test<span class="token punctuation">,</span> display_labels<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;Does not have before1980&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;has before1980&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+<span class="token comment"># %% </span>
+<span class="token comment">#plot the roc curve</span>
+metrics<span class="token punctuation">.</span>plot_roc_curve<span class="token punctuation">(</span>clf_df<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_test<span class="token punctuation">)</span>
+
+<span class="token comment"># %%</span>
+plot_df_features <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>
+    <span class="token punctuation">{</span><span class="token string">&apos;f_names&apos;</span><span class="token punctuation">:</span> X_train<span class="token punctuation">.</span>columns<span class="token punctuation">,</span> 
+    <span class="token string">&apos;f_values&apos;</span><span class="token punctuation">:</span> clf_df<span class="token punctuation">.</span>feature_importances_<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token string">&apos;f_values&apos;</span><span class="token punctuation">,</span> ascending <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+df<span class="token operator">=</span><span class="token punctuation">(</span>alt<span class="token punctuation">.</span>Chart<span class="token punctuation">(</span>plot_df_features<span class="token punctuation">.</span>query<span class="token punctuation">(</span><span class="token string">&apos;f_values &gt; .011&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+        alt<span class="token punctuation">.</span>X<span class="token punctuation">(</span><span class="token string">&apos;f_values&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        alt<span class="token punctuation">.</span>Y<span class="token punctuation">(</span><span class="token string">&apos;f_names&apos;</span><span class="token punctuation">,</span> sort <span class="token operator">=</span> <span class="token string">&apos;-x&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>mark_bar<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+df<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">&quot;screenshot/features.png&quot;</span><span class="token punctuation">)</span>
+<span class="token comment"># %% </span>
+df_features <span class="token operator">=</span> <span class="token punctuation">(</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>
+        <span class="token punctuation">{</span><span class="token string">&apos;f_names&apos;</span><span class="token punctuation">:</span> X_train<span class="token punctuation">.</span>columns<span class="token punctuation">,</span> 
+        <span class="token string">&apos;f_values&apos;</span><span class="token punctuation">:</span> clf_df<span class="token punctuation">.</span>feature_importances_<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token string">&apos;f_values&apos;</span><span class="token punctuation">,</span> ascending <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+df_features
+<span class="token comment"># %%</span>
+<span class="token comment">#import matplotlib.pyplot as plt</span>
+
+<span class="token comment"># %%</span>
+<span class="token comment">#plt.figure(figsize=(15,7.5))</span>
+<span class="token comment">#plot_tree(clf_df, </span>
+<span class="token comment">#        filled=True, </span>
+<span class="token comment">#        rounded=True, </span>
+<span class="token comment">#        class_names=[&apos;NO&apos;,&apos;YES&apos;], </span>
+<span class="token comment">#        feature_names = X_pred.columns);</span>
+<span class="token comment"># %%</span>
+<span class="token comment">#this desicion tree need optimization due to </span>
+
+<span class="token comment">#print(classification_report(y_test, predictions))</span>
+<span class="token comment"># %%</span>
+<span class="token comment">#path = clf_df.cost_complexity_pruning_path(X_train, y_train)</span>
+<span class="token comment">#ccp_alphas = path.ccp_alphas</span>
+<span class="token comment">#ccp_alphas= ccp_alphas[:-1]</span>
+
+<span class="token comment">#clf_dts= []</span>
+
+<span class="token comment">#for ccp_alpha in ccp_alphas:</span>
+<span class="token comment">#    clf_dt = DecisionTreeClassifier(random_state= 0, ccp_alpha=ccp_alpha)</span>
+<span class="token comment">#    clf_dt.fit(X_train, y_train)</span>
+<span class="token comment">#    clf_dts.append(clf_dt)</span>
+<span class="token comment"># %%</span>
+<span class="token comment">#train_score = [clf_dt.score(X_train, y_train) for clf_dt in clf_dts]</span>
+<span class="token comment">#test_score = [clf_dt.score(X_test, y_test) for clf_dt in clf_dts]</span>
+
+<span class="token comment">#fig, ax = plt.subplots()</span>
+<span class="token comment">#ax.set_xlabel(&apos;alpha&apos;)</span>
+<span class="token comment">#ax.set_ylabel(&apos;accurancy&apos;)</span>
+<span class="token comment">#ax.set_title(&apos;Accurancy vs alpha for train and test&apos;)</span>
+<span class="token comment">#ax.plot(ccp_alphas, train_score, marker=&apos;o&apos;, label=&quot;train&quot;, drawstyle=&quot;steps-post&quot;)</span>
+<span class="token comment">#ax.plot(ccp_alphas, test_score, marker=&apos;o&apos;, label=&quot;test&quot;, drawstyle=&quot;steps-post&quot;)</span>
+<span class="token comment">#ax.legend()</span>
+<span class="token comment">#plt.show()</span>
+<span class="token comment"># %%</span>
+<span class="token comment">#cross Validation</span>
+<span class="token comment">#clf_dt = DecisionTreeClassifier(random_state=42, ccp_alpha=0.014)</span>
+
+<span class="token comment">#scores = cross_val_score(clf_dt, X_train, cv=5)</span>
+<span class="token comment">#df1 = pd.DataFrame(data = {&apos;tree&apos;:range(5), &apos;accuracy&apos;:scores})</span>
+
+<span class="token comment">#df1.plot(x=&apos;tree&apos;, y=&apos;accuracy&apos;, marker=&apos;o&apos;, linestyle=&apos;--&apos;)</span>
+<span class="token comment"># %%</span>
+
+
+
+
+
+</pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
