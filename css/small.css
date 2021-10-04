@@ -393,3 +393,60 @@ footer {
 		fill: #ff6d92;
    }
 }
+/*------Hamburger Menu--------*/
+nav button{
+    margin: 0px 140px 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4C6085;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+nav{
+    font-family: 'JetBrains Mono';
+    background-color:  #E7BB41;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;        
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration:none;
+    border-top:1px solid #E7BB41;
+    font-size: 24px;
+    font-family: 'JetBrains Mono', sans-serif;
+	display: block;
+	color:#44BBA4;
+	text-align: center;
+	 
+}
+
+nav ul li.active a{
+    background-color: #D3D0CB;
+    color:#393E41;
+}
+
+nav ul li a:hover{
+    background-color: #44BBA4;
+    color:#393E41;
+ }
+
+nav ul.hide{
+    display:none;
+}
+
+.navbar:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
