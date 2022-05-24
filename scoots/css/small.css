@@ -39,6 +39,7 @@ h2{
     font-family: 'JetBrains Mono', sans-serif;
     text-align: center;
     font-weight: bolder;
+    color: #333333;
     
 }
 .summary h3{
@@ -54,10 +55,6 @@ h2{
     color: #393E41;
     font-size: 16px;
         font-weight: bolder;
-
-    
-    
-
 }
 .thanks{
     font-family: 'JetBrains Mono', sans-serif;
@@ -76,6 +73,7 @@ p b{
     align-items: center;
     justify-content: center;
 }
+
 header p {
     margin-top: 0ex;
 }
@@ -96,6 +94,7 @@ nav button{
     font-size: 1.6rem;
     color: #4C6085;
     font-family: 'JetBrains Mono', sans-serif;
+    
 }
 nav{
     font-family: 'JetBrains Mono';
@@ -104,7 +103,9 @@ nav{
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;        
+    padding: 0; 
+    border-radius: 20px;
+    border: solid black;      
 }
 
 nav ul{
