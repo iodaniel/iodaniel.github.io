@@ -58,8 +58,6 @@ header, main, footer{
 }
 header, footer, footer a {
     text-align: center;
-    background-color: #cecece;
-    color: #2883e3;
     font-family: 'Lato';
 
 }
@@ -84,9 +82,11 @@ footer {
 	overflow: hidden;
 	width: 260px;
 }
+
 #phrases {
 	animation: slide-phrases-upward 20s;
 }
+
 #footer {
 	bottom: 30px;
 	color: white;
@@ -96,6 +96,7 @@ footer {
 	position: fixed;
 	right: 0;
 }
+
 @keyframes slide-phrases-upward {
 	0% {
 		transform: translateY(0px);
@@ -161,78 +162,91 @@ footer {
 		transform: translateY(-1000px);
    }
 }
+
 #loadingCheckCircleSVG-0 {
 	animation: fill-to-white 5000ms;
 	animation-delay: -1.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-1 {
 	animation: fill-to-white 5000ms;
 	animation-delay: -0.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-2 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 0.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-3 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 1.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-4 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 2.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-5 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 3.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-6 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 4.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-7 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 5.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-8 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 6.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-9 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 7.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-10 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 8.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-11 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 9.5s;
 	fill: white;
 	opacity: 0;
 }
+
 #loadingCheckCircleSVG-12 {
 	animation: fill-to-white 5000ms;
 	animation-delay: 10.5s;
