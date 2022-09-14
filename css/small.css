@@ -435,7 +435,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration:none;
-    border-top:1px solid #E7BB41;
+    border-top:1px linear-gradient(to left, #8f94fb, #4e54c8);;
     font-size: 24px;
     font-family: 'JetBrains Mono', sans-serif;
 	display: block;
