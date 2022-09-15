@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="css/large.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico">
+  <script>function toggleMenu(){
+    // console.log(document.getElementById("primaryNav").classList);
+     document.getElementById("primaryNav").classList.toggle("hide");
+     //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
+  }</script>
   <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
 </head>
 <body>
@@ -18,13 +23,13 @@
 <main>
   <nav class="navbar">
     <!--<img src="images/logo.png">-->
-    <button onclick=toggleMenu()>&#9776; Menu</button>  
+    <button onclick=toggleMenu()>&#9776;</button>  
     <ul id="primaryNav" class= "">
-         <li class="active"><a href="index.html">Home</a></li>
+         <li class=""><a href="index.html">Home</a></li>
          <li><a href="porfolio.html">WDD330</a></li>
          <li><a href="datascience.html">Data Science</a></li>
          <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
-         <li><a href="#"></a></li>
+         <li><a href="#">WDD230</a></li>
      </ul>
   </nav>
 <h1>Web Developer Porfolio</h1>
@@ -149,6 +154,7 @@
   <script src='js/webFontLoad.js'></script>
   <script src='js/checkmark.js'></script>
   <script src='js/gtag.js'></script>
+  <script src="js/toggle.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKGW6KWC0"></script>
   </body>

@@ -413,12 +413,18 @@ nav button{
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #4C6085;
+    color: white;
     font-family: 'JetBrains Mono', sans-serif;
+
+        align-self: flex-start;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+      
 }
 nav{
     font-family: 'JetBrains Mono';
-    background-color:  #E7BB41;
+    background-color:  #184E77;
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -432,14 +438,13 @@ nav ul{
     margin: 0;
 }
 nav ul li a {
-    display: block;
+    flex-direction: row;
     padding: .8rem 2%;
     text-decoration:none;
-    border-top:1px linear-gradient(to left, #8f94fb, #4e54c8);;
     font-size: 24px;
     font-family: 'JetBrains Mono', sans-serif;
-	display: block;
-	color:#184E77;
+	display: flex;
+	color:#E7BB41;
 	text-align: center;
 	 
 }
@@ -450,8 +455,8 @@ nav ul li.active a{
 }
 
 nav ul li a:hover{
-    background-color: #44BBA4;
-    color:#393E41;
+    background-color: #E7BB41;
+    color:#184E77;
  }
 
 nav ul.hide{
