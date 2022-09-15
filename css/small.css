@@ -69,7 +69,7 @@ header img {
 }
 
 footer {
-    font-size: 40px ;
+    background-color: #184E77;
     clear: both;
     
 }
@@ -86,7 +86,7 @@ footer {
 #phrases {
 	animation: slide-phrases-upward 20s;
 }
-
+/*this give the behavior of the navbar move above and up*/
 #footer {
 	bottom: 30px;
 	color: white;
