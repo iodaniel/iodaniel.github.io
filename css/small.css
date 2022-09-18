@@ -553,3 +553,13 @@ button {
 	display: inline-block;
 	font-size: 16px;
   }
+
+main ul li {
+	color:white;
+	font-size:25px;
+    line-height: 50px;
+    font-family: 'Roboto';
+	
+
+
+  }
