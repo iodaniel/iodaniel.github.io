@@ -433,19 +433,24 @@ nav{
 }
 
 nav ul{
+	float:right;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 20px;
 }
 nav ul li a {
     flex-direction: row;
     padding: .8rem 2%;
     text-decoration:none;
-    font-size: 24px;
+    font-size: 19px;
     font-family: 'JetBrains Mono', sans-serif;
 	display: flex;
+	line-height: 40px;
+	margin: 0 5px;
 	color:#E7BB41;
 	text-align: center;
+	text-transform: uppercase;
+	
 	 
 }
 
@@ -563,3 +568,16 @@ main ul li {
 
 
   }
+
+label.logo{
+	font-family: 'Roboto';
+	color:white;
+	font-size:35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+button.toggle{
+	color:#B5E48C;
+	float:right;
+}
