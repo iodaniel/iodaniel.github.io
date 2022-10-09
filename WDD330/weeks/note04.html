@@ -18,6 +18,15 @@
      //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
   }</script>
   <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+  <style>
+    code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -34,134 +43,290 @@
   </nav>
 <main>
 
-<h1>JavaScript - WDD330<span>&#128241</span></h1>
-  <p>avaScript is one of the most used programming languages in the world, and JavaScript is responsible for the interactivity of the websites</p>
-  <h2>Your First program in JavaScript Hello World</h2>
-  <pre>
-    <code>console.log('Hello World');</code>
-   </pre>
-  <p>This code will be printed in your console Hello World, to add the Javascript in your 
-    HMTL you can add with the tag <script></script> example of that as follows:
+<h1>JavaScript - Forms, Object-Oriented Programming and Modern JavaScript Development WDD330<span>&#128241</span></h1>
+  
+  <h2>Forms</h2>
+  <p>Forms are made up of a form element that contains <code>form</code> controls such as input fields, select menus and buttons.</p>
+  <p>Forms cab be processed using JavaScript in the frontend, the DOM has property document.forms, returns a collection of forms using index notation.</p>
+  <P><code>document.forms</code> return and HTML collection of all the forms in the document in order they appear in the markup</P>
+ <strong>Important to not using index notation:</strong><br>
+    <code>const form = document.forms[0];</code><p>vs</p>
+   <code>const form = document.forms.search;</code>
+  <p>Access Control: </p><code>const input = form['searchInput']</code>
+  <p>Access Element: </p><code> const input = form['searchInput']</code>
+  <p>reset form: </p><code>form.reset()</code>
+  <p>submit form: </p><code>form.submit()</code>
   </p>
-  <pre>
-    <code>const btn = document.getElementById()
-        btn.addEventListener('click', function() {
-            alert('Hello World!');
-        };</code>
-  </pre>
+
+  <p><strong>The <code>placeholder</code> Attribute</strong></p>
+  <p>Similar functionality can be produced in modern browsers using the placeholder attribute in the HTML markup. Simply change the input field to the following in search.html:</p>
+  <code>input type='text' name='search-box' placeholder='Search Here'</code>
+  <p>This has slightly different behavior in that the placeholder text is not actually a value of the input field, so it won’t be submitted as the field’s value if the user fails to fill it in.</p>
+  <h3>EVENTS</h3>
+  <p>change: moves focus after changing</p>
+   <p> submit: form is submitted</p>
+   <p>focus: element is focused on (cursor inside input)</p>
+    <p>blur:  user moves focus away from form</p>
+   
+  <h3>NEW ATTRIBUTES</h3>
+ 
+    <p>hidden: not displayed by browser</p>
+    <p>file: upload files</p>
+    <p>autofocus: give focus when page loads</p>
+    <p>placeholder: inserts value in input field</p>
+    <p>maxlength: limits number of characters entered in field</p>
+    <p>Checkbox</p><code>document.forms.hero.powers[0].checked = true;
+        OR
+        input type='checkbox' value='Flight' name='powers' checked</code>  
+  <p>Radio</p><code>form.type[2].checked = true;
+	OR
+	input type='radio' name='type' value='Villain' checked</code>
+  <h3>SELECT OPTIONS</h3>
+  <p>Selected attribute shows text initially
+    multiple attribute if more than one option can be selected
+    can access text of options using:</p> <code>form.city.options[form.city.selectedIndex].text
+    OR
+    form.city.value;</code>
+   
+  <h3>TEXTAREA</H3>
+    <p>add text area</p>
+        <code>textarea name='origin' rows='20' cols='60'>This is a text area...../textarea
+        OR<br>
+        form.origin.value = 'This is a textarea text .....';
+  </code>
+  <h3>BUTTON TYPES</h3>
+  <p>reset</p>
+  <p>button</p>
+  <p>submit</p>
+  <h3>FORM VALIDATION</h3>
+  <p>The validation of the form help us to avoid corrupted data or prevent malicious inputs</p>
+  <ul>
+    <li>required field is complete</li>
+    <li>email address valid</li>
+    <li>validate credit card</li>
+    <li>validate numerical data request</li>
+    <li>use regex to validate passwords</li>
+  
+  </ul>
   <p>
- you can call a JavaScript file example of that is as follows, you need to add the and the open and close tag of the script:
-  </p>
-  <pre>
-    <code>
-        script src='js/helloWorld.js'
-    </code>    
-    </pre>
-    <p>To create a comment a peace of test that the computer will not read the comment is design for programmer to organize the code or only explain any logic or objective for peace of 
-        to comment we use<code>//</code> or 
-        <code>/*comment*/</code>  
-     </p>
-  <ul>
-    <h3>Variables</h3>
-    <li>The variable is a container for storing data including integer, float, strings, boolean,symbols, undefined and Null </li>
-    <li>to use a variable you can use var, let, const</li>
-    <li>var store any variable</li>
-    <li>const store only constants variable that did not repeat</li>
-    <li>let can store integers, strings and booleans.</li>
-  </ul>
-  <h3>Scope</h3>
-  <ul>
-    <li>The scope determines the visibility of variables and makes contrast between variables, the 
-        The following example is for local scope.
-    </li>
-    
-        <code>function myFunction() {
-            let carName = "Volvo";
-            // code here CAN use carName
-          }
-          </code>
-  </ul>
-  <h3>Arrays</h3>
-  <ul>
-    <li>An array is a special variable, wich can hold more that one value.</li>
-    <code>const cars =['Ford','Volvo','Ferrari']</code>
+ Is crucial to apply validation to form to minimize a posible vulnerability. </p>
+  <h2>Object-Oriented Programming</h2>
+ <p>The object-oriented programming paradigm is focused on making code more efficient and not repeated during programming when generating classes, in object-oriented programming the functions are called methods.</p>
+ <p>Encapsulation: inner workings are kept hidden, only essential functionalities exposed can be as a private and public class.</p>
+  <p>Polymorphism: is process can be used for different objects, can share same method and in another words a object can have differt forms.</p>
+   <p>Inheritance: inherit properties or methods from existing objects can be reuse it.
+    </p>
 
- </ul>
- <h3>Logic Conditionals</h3>
- <ul>
- <li>These logical conditions allow you to control the flow of a program.</li>
- <li>if Statement</li>
- <code>const age = 23;
-    if (age < 18) {
-    console.log('Sorry, you are not old enough to play this game');
-    }</code>
- <li>else Statement</li>  
- <code>const n = 12;
-    if (n%2 === 0) {
-    console.log('n is an even number');
-    } else {
-    console.log('n is an odd number');
-    }
-    </code>
-    <li>else if Statement</li>
-    <code>if (number === 4) {
-        console.log('You rolled a four');
-        } else if (number === 5) {
-        console.log('You rolled a five');
-        } else if(number === 6){
-        console.log('You rolled a six');
-        } else {
-        console.log('You rolled a number less than four');
-        }</code>
-    <li>Switch Statement</li>
-    <code>switch (number) {
-        case 4:
-        console.log('You rolled a four');
-        break;
-        case 5:
-        console.log('You rolled a five');
-        break;
-        case 6:
-        console.log('You rolled a six');
-        break;
-        default:
-        console.log('You rolled a number less than four');
-        break;
-    }</code>
-    
- </ul>
- <h3>Loops</h3>
- <ul>
- <li>Loops will repeat a pice of code until changing the conditions.</li>
- <li>While Loops</li>
- <code>let bottles = 10;
-    while (bottles > 0){
-        console.log(`There were ${bottles} green bottles, hanging on a wall. And if one green bottle should accidentally fall, there'd be ${bottles-1} green bottles hanging on the wall`);
-        bottles--;
-    }</code>
- <li>do .. while Loops</li>  
- <code>do {
-    do something
-} while(condition)</code>
-    <li>For Loops</li>
-    <code>for (initialization ; condition ; after) { do something }</code>
-
- </ul>
- <h3>Functions</h3>
- <ul>
- <li>A function is a chunk of code that you can reuse when you call, the function reduce repetition of code.</li>
- <code>function hello(){
-    console.log('Hello World!');
+<h4>Constructor Functions</h4><br>
+<code> const dice = {<br>
+    sides: 6,<br>
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }    <br>
 }</code>
- <li>Invoking a Function.</li>
- <code>hello();
-    'Hello world!'</code>
+<h4>Class Declaration</h4>
+<p>ES6 introduced the new class declaration syntax that does exactly the same thing as a constructor function, but looks much similar to writing a class in a class-based programming language. Here is the dice example again, using a class declaration:</p>
+<code>class Dice {<br>
+    constructor(sides=6) {<br>
+        this.sides = sides;<br>
+    }<br>
+<br>
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }<br>
+}</code>
+<p>Best practice: names of constructor functions or class declarations are capitalized</p>
 
- </ul>
-  <h3>Questions?
-  </h3>
-  <p>What is the difference between functions and arrow functions in what scenario you can use it?</p>
- <p>JavaScript is not a class-based object-oriented language. But you still have ways to use object-oriented programming (OOP).</p>
+<p>declares new instance, using argument for sides:<br>
+    <code>const blueDice = new Dice(20);<br>
+    << Dice { sides: 20 }<br>
+    </code>
+    </p>
+
+<p>all objects have a constructor property that returns constructor function that created it:<br>
+    <code>blueDice.constructor<br>
+    << [Function: Dice]<br>
+</code>    
+</p>
+ <h4>Static Methods</h4>
+ <p>The static keyword can be used in class declarations to create a static method. These are sometimes called class methods in other programming languages. A static method is called by the class directly rather than by instances of the class</p>
+<code>class Dice {<br>
+    constructor(sides=6) {<br>
+        this.sides = sides;<br>
+    }<br><br>
+
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }<br><br>
+
+    static description() {<br>
+        return 'A way of choosing random numbers'<br>
+    }<br><br>
+}</code>
+<h4>Prototypal Inheritance</h4>
+<p>JavaScript uses a prototypal inheritance model. This means that every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class’s prototype can be accessed by every object instantiated by that class.</p>
+<code>
+    class Turtle {<br>
+        constructor(name) {<br>
+            this.name = name;<br>
+            this.weapon = 'hands';<br>
+        }<br>
+        sayHi() {<br>
+            return `Hi dude, my name is ${this.name}`;<br>
+        }<br>
+        attack(){<br>
+            return `Feel the power of my ${this.weapon}!`;<br>
+        }<br>
+    }<br>
+</code>
+<h4>Private and Public Methods</h4>
+<p>objects methods public by default</p>
+<p>seen if queried, example dog.animal </p>
+<p>changed by assignment, example dog.animal= 2;</p>
+ <code>   
+    class Turtle {<br>
+        constructor(name,color) {<br>
+            this.name = name;<br>
+            let _color = color;<br>
+            this.setColor = color => { return _color = color; }<br>
+            this.getColor = () => _color;<br>
+        }<br>
+    }<br>
+</code><br>
+<p>Private method you can use _method</p>
+<ul>
+    <li>Imposible to access outside of the class</li>
+    <li>Can use to store valuable data or process</li>
+    <li>Need to  use getter and setter</li>
+    <li>you can control what can value accepted</li>
+
+</ul>
+
+<h4>Inheritance</h4>
+<p>The examples we’ve seen so far have all demonstrated inheritance by inheriting properties and methods from the prototype. But the prototype is just another object, so it also has its own prototype, which in turn has its own prototype... and so on, creating a chain of inheritance.</p>
+<h5>Prototype chain</h5>
+
+<code>Object.getPrototypeOf(raph)<br>
+    << Turtle {}</code>
+<p>example of inherance</p>
+<code>
+    class Turtle {<br>
+        constructor(name) {<br>
+            this.name = name;<br>
+            }<br>
+        sayHi() {<br>
+            return `Hi dude, my name is ${this.name}`;<br>
+        }<br>
+    
+        swim() {<br>
+            return `${this.name} paddles in the water`;<br>
+        }<br>
+    }<br>
+</code>
+
+<h4>Polymorphism</h4>
+<p>Methods can be overridden for specific implementation example of that:
+    number.toString() - returns number as a string
+    array.toString() - returns array items as series of strings</p><br>
+<code>[1,2,3].toString()<br>
+    << '1,2,3'</code>
+
+
+<h4>Adding Methods to Built-in Objects</h4>
+<p>It is possible to add more methods to the prototype of JavaScript’s built-in objects — such as Number, String, and Array.</p>
+<code>Number.prototype.isEven = function() {<br>
+    return this%2 === 0;<br>
+}<br>
+
+Number.prototype.isOdd = function() {<br>
+    return this%2 === 1;<br>
+}<br></code>
+
+<h4>Proterty ATTS/DESC</h4>
+<p>value - value of property, default undefined</p>
+<p>enumerable -  show up if displayed, default false</p>
+   <p>writable - can be changed or not, default false</p>
+   <p>configurable -  can delete or change, default is false</p>
+<code>Object.getOwnPropertyDescriptor(me,'name');<br>
+    << { value: 'DAZ',<br>
+    writable: true,<br>
+    enumerable: true,<br>
+    configurable: true }<br></code>
+
+<h4>Getters and Setters</h4>
+<p>An object property descriptor can have get() and set() methods instead of a value attribute. All objects must have one or the other, they can't have both. The get() and set() methods can be used to control how a property is set using assignment and the value that is returned when a property is queried.</p>
+<code>me.age = 21;<br>
+    me.retirementAge = 65;<br>
+    
+    Object.defineProperty(me, 'yearsToRetirement',{<br>
+        get() {<br>
+            if(this.age > this.retirementAge) { return 0; }<br>
+            else { return this.retirementAge - this.age; }<br>
+        },<br>
+        set(value) {<br>
+            this.age = this.retirementAge - value;<br>
+            return value;<br>
+        }<br>
+    });<br></code>
+
+<h4>Creating Objects from Other Objects</h4>
+<p>Object literal:</p>
+    <code>const Human = {<br>
+    arms: 2,<br>
+    legs: 2,<br>
+    walk() { console.log('Walking'); }<br>
+    }<br><br></code>
+<p>Use as prototype, acts as superclass, create instance by:</p>
+    <code>const lois = Object.create(Human);</code>
+    
+    <p>Extra properties can be added to instance:<p>
+    <code>lois.name = 'Lois Lane';<br>
+    << 'Lois Lane'<br><br>
+    
+    lois.job = 'Reporter';<br>
+    << 'Reporter'<br><br>
+    
+    const Superhuman = Object.create(Human);<br>
+    
+    Superhuman.change = function() {<br>
+    return `${this.realName} goes into a phone box and comes out as ${this.name}!`;<br>
+    }; <br>
+    
+    Superhuman.name = 'Name Needed';<br>
+    << 'Name Needed'<br><br>
+    
+    Superhuman.realName = 'Real Name Needed';<br>
+    << 'Real Name Needed'<br>
+    
+    
+    now use new object to create others:<br>
+    const superman = Object.create(Superhuman);<br>
+    superman.name = 'Superman';<br>
+    superman.realName = 'Clark Kent';<br>
+    superman.change()<br>
+</code>    
+</p>
+
+<h4>Mixins</h4>
+<p>A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</p>
+<code>const a = {};<br><br>
+
+    const b = { name: 'JavaScript' };<br>
+    
+    Object.assign(a,b);<br>
+    << { name: 'JavaScript' }<br>
+    
+    a.name<br>
+    << 'JavaScript'</code><br>
+
+<h3>Modern JAvaScript Development</h3>
+
+
+
+<h4>Reference</h4>
+Forms: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/8/
+Object-Oriented Programming: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwva7/
+<br>
   <h2>Contact me</h2>
   <div class="row">
     <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
