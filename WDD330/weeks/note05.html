@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Front End Porfolio JavaScript - WDD330</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Web development focused on your business needs. If you can imagine it we can create it online with simple yet elegant solutions for all your projects or business needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/small.css">
+  <link rel="stylesheet" href="../../css/medium.css">
+  <link rel="stylesheet" href="../../css/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <script>function toggleMenu(){
+    // console.log(document.getElementById("primaryNav").classList);
+     document.getElementById("primaryNav").classList.toggle("hide");
+     //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
+  }</script>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+  <style>
+    code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!--<img src="images/logo.png">-->
+    <label class="logo">WebCex</label>
+    <button class="toggle" onclick=toggleMenu()>&#9776;</button>  
+    <ul id="primaryNav" class= "">
+         <li class=""><a href="../../index.html">Home</a></li>
+         <li><a href="../../porfolio.html">WDD330</a></li>
+         <li><a href="../../datascience.html">Data Science</a></li>
+         <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
+         <li><a href="#">WDD230</a></li>
+     </ul>
+  </nav>
+<main>
+
+<h1>JavaScript - JavaScript Debugging- WDD330<span>&#128241</span></h1>
+  
+  <h2>Debugging</h2>
+  <p>Forms are made up of a form element that contains <code>form</code> controls such as input fields, select menus and buttons.</p>
+  <p>Forms cab be processed using JavaScript in the frontend, the DOM has property document.forms, returns a collection of forms using index notation.</p>
+  <P><code>document.forms</code> return and HTML collection of all the forms in the document in order they appear in the markup</P>
+ <strong>Important to not using index notation:</strong><br>
+    <code>const form = document.forms[0];</code><p>vs</p>
+   <code>const form = document.forms.search;</code>
+  <p>Access Control: </p><code>const input = form['searchInput']</code>
+  <p>Access Element: </p><code> const input = form['searchInput']</code>
+  <p>reset form: </p><code>form.reset()</code>
+  <p>submit form: </p><code>form.submit()</code>
+  </p>
+
+  <p><strong>The <code>placeholder</code> Attribute</strong></p>
+  <p>Similar functionality can be produced in modern browsers using the placeholder attribute in the HTML markup. Simply change the input field to the following in search.html:</p>
+  <code>input type='text' name='search-box' placeholder='Search Here'</code>
+  <p>This has slightly different behavior in that the placeholder text is not actually a value of the input field, so it won’t be submitted as the field’s value if the user fails to fill it in.</p>
+  <h3>EVENTS</h3>
+  <p>change: moves focus after changing</p>
+   <p> submit: form is submitted</p>
+   <p>focus: element is focused on (cursor inside input)</p>
+    <p>blur:  user moves focus away from form</p>
+   
+  <h3>NEW ATTRIBUTES</h3>
+ 
+    <p>hidden: not displayed by browser</p>
+    <p>file: upload files</p>
+    <p>autofocus: give focus when page loads</p>
+    <p>placeholder: inserts value in input field</p>
+    <p>maxlength: limits number of characters entered in field</p>
+    <p>Checkbox</p><code>document.forms.hero.powers[0].checked = true;
+        OR
+        input type='checkbox' value='Flight' name='powers' checked</code>  
+  <p>Radio</p><code>form.type[2].checked = true;
+	OR
+	input type='radio' name='type' value='Villain' checked</code>
+  <h3>SELECT OPTIONS</h3>
+  <p>Selected attribute shows text initially
+    multiple attribute if more than one option can be selected
+    can access text of options using:</p> <code>form.city.options[form.city.selectedIndex].text
+    OR
+    form.city.value;</code>
+   
+  <h3>TEXTAREA</H3>
+    <p>add text area</p>
+        <code>textarea name='origin' rows='20' cols='60'>This is a text area...../textarea
+        OR<br>
+        form.origin.value = 'This is a textarea text .....';
+  </code>
+  <h3>BUTTON TYPES</h3>
+  <p>reset</p>
+  <p>button</p>
+  <p>submit</p>
+  <h3>FORM VALIDATION</h3>
+  <p>The validation of the form help us to avoid corrupted data or prevent malicious inputs</p>
+  <ul>
+    <li>required field is complete</li>
+    <li>email address valid</li>
+    <li>validate credit card</li>
+    <li>validate numerical data request</li>
+    <li>use regex to validate passwords</li>
+  
+  </ul>
+  <p>
+ Is crucial to apply validation to form to minimize a posible vulnerability. </p>
+  <h2>Object-Oriented Programming</h2>
+ <p>The object-oriented programming paradigm is focused on making code more efficient and not repeated during programming when generating classes, in object-oriented programming the functions are called methods.</p>
+ <p>Encapsulation: inner workings are kept hidden, only essential functionalities exposed can be as a private and public class.</p>
+  <p>Polymorphism: is process can be used for different objects, can share same method and in another words a object can have differt forms.</p>
+   <p>Inheritance: inherit properties or methods from existing objects can be reuse it.
+    </p>
+
+<h4>Constructor Functions</h4><br>
+<code> const dice = {<br>
+    sides: 6,<br>
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }    <br>
+}</code>
+<h4>Class Declaration</h4>
+<p>ES6 introduced the new class declaration syntax that does exactly the same thing as a constructor function, but looks much similar to writing a class in a class-based programming language. Here is the dice example again, using a class declaration:</p>
+<code>class Dice {<br>
+    constructor(sides=6) {<br>
+        this.sides = sides;<br>
+    }<br>
+<br>
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }<br>
+}</code>
+<p>Best practice: names of constructor functions or class declarations are capitalized</p>
+
+<p>declares new instance, using argument for sides:<br>
+    <code>const blueDice = new Dice(20);<br>
+    << Dice { sides: 20 }<br>
+    </code>
+    </p>
+
+<p>all objects have a constructor property that returns constructor function that created it:<br>
+    <code>blueDice.constructor<br>
+    << [Function: Dice]<br>
+</code>    
+</p>
+ <h4>Static Methods</h4>
+ <p>The static keyword can be used in class declarations to create a static method. These are sometimes called class methods in other programming languages. A static method is called by the class directly rather than by instances of the class</p>
+<code>class Dice {<br>
+    constructor(sides=6) {<br>
+        this.sides = sides;<br>
+    }<br><br>
+
+    roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+    }<br><br>
+
+    static description() {<br>
+        return 'A way of choosing random numbers'<br>
+    }<br><br>
+}</code>
+<h4>Prototypal Inheritance</h4>
+<p>JavaScript uses a prototypal inheritance model. This means that every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class’s prototype can be accessed by every object instantiated by that class.</p>
+<code>
+    class Turtle {<br>
+        constructor(name) {<br>
+            this.name = name;<br>
+            this.weapon = 'hands';<br>
+        }<br>
+        sayHi() {<br>
+            return `Hi dude, my name is ${this.name}`;<br>
+        }<br>
+        attack(){<br>
+            return `Feel the power of my ${this.weapon}!`;<br>
+        }<br>
+    }<br>
+</code>
+<h4>Private and Public Methods</h4>
+<p>objects methods public by default</p>
+<p>seen if queried, example dog.animal </p>
+<p>changed by assignment, example dog.animal= 2;</p>
+ <code>   
+    class Turtle {<br>
+        constructor(name,color) {<br>
+            this.name = name;<br>
+            let _color = color;<br>
+            this.setColor = color => { return _color = color; }<br>
+            this.getColor = () => _color;<br>
+        }<br>
+    }<br>
+</code><br>
+<p>Private method you can use _method</p>
+<ul>
+    <li>Imposible to access outside of the class</li>
+    <li>Can use to store valuable data or process</li>
+    <li>Need to  use getter and setter</li>
+    <li>you can control what can value accepted</li>
+
+</ul>
+
+<h4>Inheritance</h4>
+<p>The examples we’ve seen so far have all demonstrated inheritance by inheriting properties and methods from the prototype. But the prototype is just another object, so it also has its own prototype, which in turn has its own prototype... and so on, creating a chain of inheritance.</p>
+<h5>Prototype chain</h5>
+
+<code>Object.getPrototypeOf(raph)<br>
+    << Turtle {}</code>
+<p>example of inherance</p>
+<code>
+    class Turtle {<br>
+        constructor(name) {<br>
+            this.name = name;<br>
+            }<br>
+        sayHi() {<br>
+            return `Hi dude, my name is ${this.name}`;<br>
+        }<br>
+    
+        swim() {<br>
+            return `${this.name} paddles in the water`;<br>
+        }<br>
+    }<br>
+</code>
+
+<h4>Polymorphism</h4>
+<p>Methods can be overridden for specific implementation example of that:
+    number.toString() - returns number as a string
+    array.toString() - returns array items as series of strings</p><br>
+<code>[1,2,3].toString()<br>
+    << '1,2,3'</code>
+
+
+<h4>Adding Methods to Built-in Objects</h4>
+<p>It is possible to add more methods to the prototype of JavaScript’s built-in objects — such as Number, String, and Array.</p>
+<code>Number.prototype.isEven = function() {<br>
+    return this%2 === 0;<br>
+}<br>
+
+Number.prototype.isOdd = function() {<br>
+    return this%2 === 1;<br>
+}<br></code>
+
+<h4>Proterty ATTS/DESC</h4>
+<p>value - value of property, default undefined</p>
+<p>enumerable -  show up if displayed, default false</p>
+   <p>writable - can be changed or not, default false</p>
+   <p>configurable -  can delete or change, default is false</p>
+<code>Object.getOwnPropertyDescriptor(me,'name');<br>
+    << { value: 'DAZ',<br>
+    writable: true,<br>
+    enumerable: true,<br>
+    configurable: true }<br></code>
+
+<h4>Getters and Setters</h4>
+<p>An object property descriptor can have get() and set() methods instead of a value attribute. All objects must have one or the other, they can't have both. The get() and set() methods can be used to control how a property is set using assignment and the value that is returned when a property is queried.</p>
+<code>me.age = 21;<br>
+    me.retirementAge = 65;<br>
+    
+    Object.defineProperty(me, 'yearsToRetirement',{<br>
+        get() {<br>
+            if(this.age > this.retirementAge) { return 0; }<br>
+            else { return this.retirementAge - this.age; }<br>
+        },<br>
+        set(value) {<br>
+            this.age = this.retirementAge - value;<br>
+            return value;<br>
+        }<br>
+    });<br></code>
+
+<h4>Creating Objects from Other Objects</h4>
+<p>Object literal:</p>
+    <code>const Human = {<br>
+    arms: 2,<br>
+    legs: 2,<br>
+    walk() { console.log('Walking'); }<br>
+    }<br><br></code>
+<p>Use as prototype, acts as superclass, create instance by:</p>
+    <code>const lois = Object.create(Human);</code>
+    
+    <p>Extra properties can be added to instance:<p>
+    <code>lois.name = 'Lois Lane';<br>
+    << 'Lois Lane'<br><br>
+    
+    lois.job = 'Reporter';<br>
+    << 'Reporter'<br><br>
+    
+    const Superhuman = Object.create(Human);<br>
+    
+    Superhuman.change = function() {<br>
+    return `${this.realName} goes into a phone box and comes out as ${this.name}!`;<br>
+    }; <br>
+    
+    Superhuman.name = 'Name Needed';<br>
+    << 'Name Needed'<br><br>
+    
+    Superhuman.realName = 'Real Name Needed';<br>
+    << 'Real Name Needed'<br>
+    
+    
+    now use new object to create others:<br>
+    const superman = Object.create(Superhuman);<br>
+    superman.name = 'Superman';<br>
+    superman.realName = 'Clark Kent';<br>
+    superman.change()<br>
+</code>    
+</p>
+
+<h4>Mixins</h4>
+<p>A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</p>
+<code>const a = {};<br><br>
+
+    const b = { name: 'JavaScript' };<br>
+    
+    Object.assign(a,b);<br>
+    << { name: 'JavaScript' }<br>
+    
+    a.name<br>
+    << 'JavaScript'</code><br>
+
+<h3>Modern JavaScript Development</h3>
+
+<p>In the development enviroment we have the libraries that are code that provides several methods to achive common tasks</p>
+<p>JavaScript Way:</p>
+<code>para.classList.add('important');<br>
+    const newPara = document.createElement('p');<br>
+    newPara.textContent = 'Another Paragraph';<br>
+    para.appendChild(newPara);</code><br>
+
+<p>jQuery library </p><br>
+<code>$(para).addClass('important').append('<p>Another Paragraph</p>');
+</code>
+<br>
+<h4>jQuery Lirbary</h4>
+<ul>
+    <li>Most popular JavaScript library</li>
+    <li>IE functionality</li>
+    <li>jQuery addClass() </li>
+    <li>you need to downloaded</li>
+
+</ul>
+<p>Advantage of use libraries, the website can be scalable, optimized, tested, battle-testted, online documentation and support </p>
+<p> Disadvantage if the library have a bulnerability your website have the vulnerability too</p>
+
+<h4>Modular JS</h4>
+<p>self-contained piece of code that can be used in other files/modules</p>
+<ul>
+    <li>Module has own global scope</li>
+    <li>All code in modules always in strict mode</li>
+    <li>Module has own global scope</li>
+    <li>Top level of module is undefined</li>
+    <li>can’t use html style comments in modules</li>
+</ul>
+    <p>example</p>
+    <code>export const PI = 3.1415926;</code>
+    <p>saved in module and imported</p>
+    <code>import { PI } from './pi.js';</code>
+
+
+    <h4>MVC frameworks
+</h4>
+<p>Aurelia - modern framework uses ES6 lets you write dynamic web apps while keeping implementation in background</p><br>
+<p>Angular - powerful framework created by Google makes creating dynamic web apps easier, extending HTML language using custom ng- atts</p>
+<p>Ember - framework to make large web apps easier, uses common conventions that avoids need for lots of setup code</p>
+
+<h4>Two camps for inputting code:</h4>
+<code>Hello {{ name }}</code><br>
+<code>Hello <%= name %></code>
+
+<p>React- REACT created by Facebook and VUE.js both use virtual DOM
+    use components
+    react uses language called JSX - HTML and JS mixed
+    vue.js uses HTML like templates that contain logic/directives/js objects
+    
+    </p>
+<p>YARN - popular alternative to npm, installs faster packages.</p>
+<p>NPM - node package manager, allow JavaScript to be shared tools and functionalities</p>
+ <p>CDNs - contact delivery networks, deliver web resources (like js, css, images) to user</p>
+
+<h4>Reference</h4>
+Forms: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/8/
+Object-Oriented Programming: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwva7/
+<br>
+  <h2>Contact me</h2>
+  <div class="row">
+    <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
+
+  </div>
+
+  <ul>
+    <li>Lesson 01: <a href="../../WDD330/week01/note01.html">Notes</a> </li>
+    <li>Lesson 02: <a href="#"></a> </li>
+    <li>Lesson 03: <a href="#"></a> </li>
+    <li>Lesson 04: <a href="#"></a> </li>
+    <li>Lesson 05: <a href="#"></a> </li>
+    <li>Lesson 06: <a href="#"></a> </li>
+    <li>Lesson 07: <a href="#"></a></li>
+    <li>Lesson 08: <a href="#"></a> </li>
+    <li>Lesson 09: <a href="#"></a> </li>
+    <li>Lesson 10: <a href="#"></a></li>
+    <li>Lesson 11: <a href="#"></a> </li>
+
+  </ul>
+</main>
+  <footer >
+    <!--for some reason I was unable to render the js file date.js-->
+    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" color:white;>Webcex</a>
+    <script src="js/date.js"></script>
+  </footer>
+  <!--new way to use font-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+  <script src='../../js/webFontLoad.js'></script>
+  <script src='../../js/checkmark.js'></script>
+  <script src='../../js/gtag.js'></script>
+  <script src="../../js/toggle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKGW6KWC0"></script>
+  </body>
+
+</html> 
