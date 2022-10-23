@@ -100,7 +100,7 @@ async function getEntries() {
 async function startUp() {
     document.getElementsByClassName('todoList')[0].innerHTML = '';
 
-    const todos = await getEntries();
+    var todos = await getEntries();
     displayCount(todos.filter(item => item.completed === false).length);
 
     if (todos !== null) {
