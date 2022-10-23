@@ -7,8 +7,7 @@ class TodoItem {
 }
 
 function addTodo() {
-  
-    const todo_Entry = document.getElementById("todo_Entry").value;
+    var todo_Entry = document.getElementById("todo_Entry").value;
     
     if (todo_Entry !== '') {
         saveEntry(todo_Entry);
@@ -20,17 +19,17 @@ function addTodo() {
 
 function displayEntry(todo) {
 
-    const todo_Item_Div = document.createElement('div');
+    var todo_Item_Div = document.createElement('div');
     todo_Item_Div.setAttribute('class', 'todoItem');
     todo_Item_Div.setAttribute('id', todo.id)
     //this code will provide the icon inside of a span tag
-    const spanIconBox = document.createElement("span");
+    var spanIconBox = document.createElement("span");
     spanIconBox.setAttribute('class', 'material-icons');
     spanIconBox.innerText = "check_box_outline_blank";
     spanIconBox.setAttribute("id", "iconFor"+todo.id)
     spanIconBox.myParam = todo.id;
     // this code is the task div
-    const taskDiv = document.createElement('div');
+    var taskDiv = document.createElement('div');
     taskDiv.setAttribute('class', 'task');
     taskDiv.innerText = todo.content;
     // this code will add the span tag and inside a remove icons
