@@ -76,8 +76,8 @@ async function deleteTask(evt) {
 
 async function saveEntry(entry) {
 
-    const entries = await getEntries();
-    const todo_Entry = new TodoItem(entry);
+    var entries = await getEntries();
+    var todo_Entry = new TodoItem(entry);
 
     displayEntry(todo_Entry, "all");
     entries.push(todo_Entry);
@@ -87,7 +87,7 @@ async function saveEntry(entry) {
 }
 
 async function getEntries() {
-    const entries = await JSON.parse(localStorage.getItem('testC'));
+    var entries = await JSON.parse(localStorage.getItem('testC'));
     if (entries !== null) {
         return entries;
     } else {
