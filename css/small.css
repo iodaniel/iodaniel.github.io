@@ -548,16 +548,6 @@ nav ul.hide{
 	font-size: 12px;
   }
 
-button {
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-  }
 
 main ul li {
 	color:white;
@@ -582,3 +572,99 @@ button.toggle{
 	float:right;
 }
 
+/********************************
+Todo list App********************
+********************************/
+.add_button{
+	
+		background-color: goldenrod; /* Green */
+		
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 20px;
+	
+	 
+}
+.circle{
+	border-radius: 50%
+}
+.actionButton {
+	display:flex;
+	background-color: goldenrod; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+
+  }
+ .material-icons{
+	color:gray;
+	cursor: pointer;
+
+ }
+  
+  .container-todo{
+	width: 85%;
+	margin: auto;
+	background-color: #ffffff;
+  }
+  
+  .entry {
+	margin-top: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .entry input {
+	width: 80%;
+	font-size: 20px;
+	border-radius: 10px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 7px;
+	border: solid 1px black;
+  }
+  
+ 
+  .square {
+	height: 15px;
+	width: 15px;
+	border: 1px solid rgb(232, 9, 9);
+  }
+  
+  .todoItem {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 7px;
+	border: solid 1px black;
+  }
+  .completed {
+	text-decoration: line-through;
+  background-color: rgb(225, 196, 65);
+  }
+ 
+  .buttonContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  }
+  .actionBtns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 7px;
+	float: right;
+  }
+  
