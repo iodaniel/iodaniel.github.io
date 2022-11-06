@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Front End Porfolio JavaScript - WDD330</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Web development focused on your business needs. If you can imagine it we can create it online with simple yet elegant solutions for all your projects or business needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/small.css">
+  <link rel="stylesheet" href="../../css/medium.css">
+  <link rel="stylesheet" href="../../css/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <script>function toggleMenu(){
+    // console.log(document.getElementById("primaryNav").classList);
+     document.getElementById("primaryNav").classList.toggle("hide");
+     //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
+  }</script>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+  <style>
+    code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!--<img src="images/logo.png">-->
+    <label class="logo">WebCex</label>
+    <button class="toggle" onclick=toggleMenu()>&#9776;</button>  
+    <ul id="primaryNav" class= "">
+         <li class=""><a href="../../index.html">Home</a></li>
+         <li><a href="../../porfolio.html">WDD330</a></li>
+         <li><a href="../../datascience.html">Data Science</a></li>
+         <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
+         <li><a href="#">WDD230</a></li>
+     </ul>
+  </nav>
+<main>
+
+<h1>Transforms and Transitions | Canvas, SVG and Drag and Drop ||WDD330<span>&#128241</span></h1>
+<h3>Transform</h3>
+<p>The transform property lets you translate, rotate, scale adn skew any element on the page. 
+    Examples as follows:
+</p>
+<ul>
+    <li>transform: translate(45px, -45px);</li>
+    <li>transform: scale(1.5, 0.25);</li>
+    <li>transform: rotate(10deg)</li>
+    <li>transform: skew(15deg, 4deg);</li>
+    <li>transform-origin: 0 0;</li>
+    <li>Choose your ordering carefully</li>
+</ul>
+<h3>Transitions</h3>
+<p>The transitions functions allow you to move elements left and right, up or down. These funcitons are similarto the behavior of 
+    possitionL relative in CSS. 
+    The translate(x,y) function moves an element x from the left, and y from the top:
+    <code> transform: translate(45px, -45px);</code>
+    Examples as follows:
+</p>
+<ul>
+    <li>transition-property: transform, color; </li>
+    <li>transition-duration: 0.2s;</li>
+    <li>transition-timing-function: ease-out;</li>
+    <li>transition-delay: 50ms;</li>
+    <li>Short hand transition: transform 0.2s ease-out 50ms, color 0.1s linear 50ms;</li>
+</ul>
+
+<h3>Keyframes</h3>
+<ul>
+<li>call with animation-name: x;</li>
+<li>animation-duration: 2s;</li>
+<li>animation-timing-function: ease-in</li>
+<li>animation-iteration-count: x;</li>
+<li>animation-direction: alternate;</li>
+<li>animation-delay: 50ms;</li>
+</ul>
+
+<p>Example of simple animation</p>
+<code>
+    @keyframes moveRight { <br>
+        from { <br>
+        transform: translateX(-50%); <br>
+        } <br>
+        to { <br>
+        transform: translateX(50%); <br>
+        } <br>
+    } <br> <br>
+    
+    @keyframes appearDisappear {  <br>
+        0%, 100% { <br>
+        opacity: 0; <br> 
+        } <br>
+        20%, 80% { <br>
+        opacity: 1; <br>
+        } <br>
+    } <br> <br>
+    
+    @keyframes bgMove { <br>
+        100% { <br>
+        background-position: 120% 0; <br>
+        } <br>
+    } <br>
+</code>
+<p>@keyframes x {<br>
+//transform<br>
+}
+</p>
+
+<h3>Canvas</h3>
+<p>The Canvas is used to draw anything we can imagen and manipulate the screen and modify the DOM.
+    to use Canvas you need to use the tag <code>canvas</code>.
+</p>
+<p>HTML</p>
+<code>canvas id="myCanvas" class="myCanvas" width="200" height="200"
+    Sorry! Your browser doesn’t support Canvas.
+/canvas</code>
+<br>
+<p>CSS</p>
+<code>.myCanvas {
+    border: dotted 2px black;
+}</code>
+<p>JS</p>
+<code>var canvas = document.getElementById("myCanvas");</code>
+
+
+
+<h3>Team Assignment</h3>
+
+<div >
+  
+  <img src="../../WDD330/images/team07-1.png" alt="code picture" style="width:80%">
+  <img src="../../WDD330/images/team07-2.png" alt="code picture" style="width:80%">
+  <img src="../../WDD330/images/team07-3.png" alt="code picture" style="width:80%">
+  
+</div>
+<h4>Reference</h4>
+https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/12/
+
+<br>
+  <h2>Contact me</h2>
+  <div class="row">
+    <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
+
+  </div>
+
+  <ul>
+    <li>Lesson 01: <a href="../../WDD330/week01/note01.html">Notes</a> </li>
+    <li>Lesson 02: <a href="#"></a> </li>
+    <li>Lesson 03: <a href="#"></a> </li>
+    <li>Lesson 04: <a href="#"></a> </li>
+    <li>Lesson 05: <a href="#"></a> </li>
+    <li>Lesson 06: <a href="#"></a> </li>
+    <li>Lesson 07: <a href="#"></a></li>
+    <li>Lesson 08: <a href="#"></a> </li>
+    <li>Lesson 09: <a href="#"></a> </li>
+    <li>Lesson 10: <a href="#"></a></li>
+    <li>Lesson 11: <a href="#"></a> </li>
+
+  </ul>
+</main>
+  <footer >
+    <!--for some reason I was unable to render the js file date.js-->
+    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" color:white;>Webcex</a>
+    <script src="js/date.js"></script>
+  </footer>
+  <!--new way to use font-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+  <script src='../../js/webFontLoad.js'></script>
+  <script src='../../js/checkmark.js'></script>
+  <script src='../../js/gtag.js'></script>
+  <script src="../../js/toggle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKGW6KWC0"></script>
+  </body>
+
+</html> 
