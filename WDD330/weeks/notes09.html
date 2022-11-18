@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Front End Porfolio JavaScript - WDD330</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Web development focused on your business needs. If you can imagine it we can create it online with simple yet elegant solutions for all your projects or business needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/small.css">
+  <link rel="stylesheet" href="../../css/medium.css">
+  <link rel="stylesheet" href="../../css/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <script>function toggleMenu(){
+    // console.log(document.getElementById("primaryNav").classList);
+     document.getElementById("primaryNav").classList.toggle("hide");
+     //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
+  }</script>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+  <style>
+    code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!--<img src="images/logo.png">-->
+    <label class="logo">WebCex</label>
+    <button class="toggle" onclick=toggleMenu()>&#9776;</button>  
+    <ul id="primaryNav" class= "">
+         <li class=""><a href="../../index.html">Home</a></li>
+         <li><a href="../../porfolio.html">WDD330</a></li>
+         <li><a href="../../datascience.html">Data Science</a></li>
+         <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
+         <li><a href="#">WDD230</a></li>
+     </ul>
+  </nav>
+<main>
+
+<h1>Form Validation | Fetch API|| WDD330<span>&#128241</span></h1>
+
+<h2>Form Validation</h2>
+<ol>
+    <li>
+        <p>The form validation helps to prevent corrupted data to access or database.</p>
+    </li>
+    <li>
+        <p>This validation can be done by the browser and the server</p>
+        <p>validation by the browser you can use <code>required</code> attribute.</p>
+        <code>input id="choose" name="i-like" required pattern="[Bb]anana|[Cc]herry"</code>
+    </li>
+    <li>
+       <p>You can use a regular expression (regex) to validate the input in the browser.</p>
+      <p>Another useful validation feature is the pattern attribute, which expects a Regular Expression as its value. </p>
+        
+    </li>
+    <li>
+        <p> Another validation we can have is to control the length of the entries to avoid the user adding any malicious characters or data.
+        </p>
+    </li>
+    <li>
+        <p>Another way to validate a form is by manipulating and validating the datatype or value of the entries. <code> type="text"</code><code>type="number"</code></p>
+    </li>
+
+    <li>
+       <p>The form is vulnerable to SQL injection attacks to avoid that you need to validate the form using <code> min="1" max="10"</code> <code> minlength or maxlength</code></p>
+    </li>
+    <li>
+        <p>The Validation forms using JavaScript, this validation can take control over the look and you can see an error message to the users </p>
+        
+    </li>
+    <li> 
+        <p>The server validation can create in PHP to validate the input and show an error message in the input. </p>
+    </li>
+    <li>
+        <p>Validation form without built-in API; In some cases, such as custom controls, you won't be able to or won't want to use 
+            the Constraint Validation API. You're still able to use JavaScript to validate your form, but you'll just have to write your own. </p>
+    </li>
+</ol>
+
+
+
+
+<h2>Fetch API</h2>
+<ol>
+    <li>
+        <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the
+             protocol, such as requests and responses. It also provides a global <code>fetch()</code> method that
+              provides an easy, logical way to fetch resources asynchronously across the network.</p>
+    </li>
+    <li>
+        <p>
+            Using the fetch method you can consume the API for different resources.
+        </p>
+        <code>fetch('http://example.com/movies.json')
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+        </code>
+    </li>
+    <li>
+        <p>
+            you can upload files<br>
+            <code>const formData = new FormData();<br>
+                const fileField = document.querySelector('input[type="file"]');<br><br>
+                
+                formData.append('username', 'abc123');<br>
+                formData.append('avatar', fileField.files[0]);<br>
+                
+                fetch('https://example.com/profile/avatar', {<br>
+                  method: 'PUT',<br>
+                  body: formData<br>
+                })<br>
+                  .then((response) => response.json())<br>
+                  .then((result) => {<br>
+                    console.log('Success:', result);<br>
+                  })<br>
+                  .catch((error) => {<br>
+                    console.error('Error:', error);<br>
+                  });</code><br>
+            
+            </p>
+        </li>
+        <li>
+            <p>    
+            
+            uploading JSON data
+            <code>const data = { username: 'example' };<br><br>
+
+                fetch('https://example.com/profile', {<br>
+                  method: 'POST', // or 'PUT'<br>
+                  headers: {<br>
+                    'Content-Type': 'application/json',<br>
+                  },<br>
+                  body: JSON.stringify(data),<br>
+                })<br>
+                  .then((response) => response.json())<br>
+                  .then((data) => {<br>
+                    console.log('Success:', data);<br>
+                  })<br>
+                  .catch((error) => {<br>
+                    console.error('Error:', error);<br>
+                  });</code><br>
+            
+                </p>
+                </li>
+        <li>
+            <p>  
+            upload multifiles using formData() method
+            <code> const formData = new FormData();<br>
+                const photos = document.querySelector('input[type="file"][multiple]');<br>
+                <br>
+                formData.append('title', 'My Vegas Vacation');<br>
+                let i = 0;<br>
+                for (const photo of photos.files) {<br>
+                  formData.append(`photos_${i}`, photo);<br>
+                  i++;<br>
+                }<br>
+                
+                fetch('https://example.com/posts', {<br>
+                  method: 'POST',<br>
+                  body: formData,<br>
+                })<br>
+                  .then((response) => response.json())<br>
+                  .then((result) => {<br>
+                    console.log('Success:', result);<br>
+                  })<br>
+                  .catch((error) => {<br>
+                    console.error('Error:', error);<br>
+                  });</code><br>
+        </p>
+    </li>
+    <li>
+        <p> You can upload data as files when you're making HTTP
+            requests with Async functions.</p>
+    </li>
+    <li>
+        <p>
+            you can send a request to consume data of an external API
+        </p>
+        <code>fetch('https://example.com', {
+            credentials: 'include'
+          });
+        </code>
+    </li>
+</ol>
+
+
+<h4>Reference</h4>
+<p>https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch</p>
+<p>https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#validating_against_a_regular_expression</p>
+<br>
+  <h2>Contact me</h2>
+  <div class="row">
+    <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
+
+  </div>
+
+  <ul>
+    <li>Lesson 01: <a href="../../WDD330/week01/note01.html">Notes</a> </li>
+    <li>Lesson 02: <a href="#"></a> </li>
+    <li>Lesson 03: <a href="#"></a> </li>
+    <li>Lesson 04: <a href="#"></a> </li>
+    <li>Lesson 05: <a href="#"></a> </li>
+    <li>Lesson 06: <a href="#"></a> </li>
+    <li>Lesson 07: <a href="#"></a></li>
+    <li>Lesson 08: <a href="#"></a> </li>
+    <li>Lesson 09: <a href="#"></a> </li>
+    <li>Lesson 10: <a href="#"></a></li>
+    <li>Lesson 11: <a href="#"></a> </li>
+
+  </ul>
+</main>
+  <footer >
+    <!--for some reason I was unable to render the js file date.js-->
+    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" color:white;>Webcex</a>
+    <script src="js/date.js"></script>
+  </footer>
+  <!--new way to use font-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+  <script src='../../js/webFontLoad.js'></script>
+  <script src='../../js/checkmark.js'></script>
+  <script src='../../js/gtag.js'></script>
+  <script src="../../js/toggle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKGW6KWC0"></script>
+  </body>
+
+</html> 
