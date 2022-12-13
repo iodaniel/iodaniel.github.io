@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+
+
+  <title>Front End Porfolio JavaScript - WDD330</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Web development focused on your business needs. If you can imagine it we can create it online with simple yet elegant solutions for all your projects or business needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/small.css">
+  <link rel="stylesheet" href="../css/medium.css">
+  <link rel="stylesheet" href="../css/large.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <script>function toggleMenu(){
+    // console.log(document.getElementById("primaryNav").classList);
+     document.getElementById("primaryNav").classList.toggle("hide");
+     //document.getElementsByClassName("primaryNav")[0].classList.remove("showmenu");
+  }</script>
+
+  <style>
+    code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
+
+</head>
+<body>
+  <nav class="navbar">
+    
+    <label class="logo">BioNutriente</label>
+    <button class="toggle" onclick=toggleMenu()>&#9776;</button>  
+    <ul id="primaryNav" class= "">
+         <li class=""><a href="../../index.html">Home</a></li>
+         <li><a href="../../porfolio.html">WDD330</a></li>
+         <li><a href="../../datascience.html">Data Science</a></li>
+         <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
+         <li><a href="#">WDD230</a></li>
+     </ul>
+  </nav>
+<main>
+<body>
+<h1>BioNutriente Simple Nutrition <span>&#128241</span></h1>
+<div class="grid">
+  <div class="column1">
+<div class="audio-container" id="audio-container">
+  <div class="audio-info">
+      <h4 id="title">How to make healthy choices</h4>
+      <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+      </div>
+  </div>
+ 
+  
+  <audio src="music/melody.mp3" id="audio"></audio>
+  <div class="img-container">
+      <img src="images/Nutrition Article.jpg" alt="music-cover" id="cover">
+  </div>
+  <div class="navigation">
+      <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+      </button>
+
+  </div>
+
+</div>
+</div>
+<div class="column2">
+<div class="container-bmi">
+  <h1>BMI Calculator</h1>
+  <p style="color:#024b94">Weight (kg)</p>
+
+  <input type="text" id="weight">
+
+  <p style="color:#024b94">Height (cm)</p>
+
+  <input type="text" id="height">
+
+  <button id="btn">Calculate</button>
+
+  <div id="result"></div>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br>  <br><br><br>
+<hr>
+<h1>How to make healthy choices</h1> 
+
+<p>Are you looking to lose weight and improve your overall health? Then you need to make sure you're getting the right nutrition.
+
+  Our diet plays a crucial role in maintaining a healthy weight and preventing chronic diseases. But with so many fad diets and conflicting advice out there, it can be difficult to know where to start.
+  
+  Here are some tips for making healthy choices that will help you lose weight and feel your best.
+  
+  </p>
+  <ul><li>First, focus on whole, unprocessed foods. These are the foods that are closest to their natural state and are packed with essential nutrients. Choose plenty of fruits and vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods and those high in added sugars, salt, and unhealthy fats.</li>
+  
+    <li>Second, watch your portions. Even healthy foods can contribute to weight gain if we eat too much of them. Use measuring cups and food scales to help you control your portions and avoid over-eating.
+  
+    <li>Third, plan ahead. It's easier to make healthy choices when you have a plan in place. Make a grocery list and stick to it, and prepare meals and snacks in advance. This will help you avoid making unhealthy decisions when you're short on time or hungry.</li>
+  
+    <li>Fourth, be mindful of your eating habits. Take the time to sit down and enjoy your meals, without distractions like TVs or phones. This will help you savor your food and pay attention to your body's hunger and fullness signals.</li>
+  
+    <li>Finally, don't forget to stay hydrated. Water is essential for our body to function properly, and it can also help us feel full and prevent us from over-eating. Aim for at least eight cups of water per day, and avoid sugary drinks and alcohol.</li></ul>
+  
+<p>By following these simple tips, you can make healthy choices that will help you lose weight and improve your overall health. So start making changes today and see the benefits for yourself.
+  
+  Remember, healthy eating is all about balance, variety, and moderation. So enjoy a wide range of nutritious foods, and don't deprive yourself of the occasional treat. With the right nutrition, you can achieve your weight loss goals and feel your best.</p>
+
+
+
+
+
+
+
+
+  <h2>Contact me</h2>
+  <div class="row">
+    <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
+
+  </div>
+</body>
+</main>
+  <footer >
+  >
+    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" color:white;>Webcex</a>
+
+  </footer>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src='../js/webFontLoad.js'></script>
+<script src='../js/checkmark.js'></script>
+<script src='../js/gtag.js'></script>
+<script src="../js/toggle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKGW6KWC0"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</body>
+
+</html> 

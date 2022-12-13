@@ -1,0 +1,128 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.grid{
+  display:grid;
+  gap:10px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+@media screen and (max-width: 600px) {
+  .column2 {
+    position:relative;
+    bottom:-300px;  
+    float: none;
+    width: 100%;
+    padding:0px;
+  }
+  .container-bmi{
+    background-color: #ffffff;
+    padding: 30px 30px;
+    width: 350px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+}
+
+.grid{
+  grid-template-columns: 1fr;
+  position:relative;
+  bottom:10px;
+}
+h1{
+  font-size: 34px;
+}
+}
+
+#btn{
+  background-color: #024b94;
+  border-radius: 10%;
+}
+
+#prev{
+  color:#024b94;
+  background-color: gold;
+  border-radius: 10%;
+}
+
+#play{
+  color:#024b94;
+  background-color: gold;
+  border-radius: 10%;
+}
+
+#next{
+  color:#024b94;
+  background-color: gold;
+  border-radius: 10%;
+}
+
+
+  
+.container-bmi{
+    background-color: #ffffff;
+    padding: 30px 30px;
+    width: 400px;
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%; */
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+}
+.container-bmi h1{
+   background: #024b94;
+   color: white;
+   text-align: center;
+   font-size: 23px;
+   letter-spacing: 1px;
+   margin-top: -30px;
+   margin-left: -30px;
+   margin-right: -30px;
+   margin-bottom: 40px;
+}
+.img-container img{
+  width: 300px;
+  border-radius: 50%;
+
+
+}
