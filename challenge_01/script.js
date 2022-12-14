@@ -11,7 +11,7 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ['Nutrition Article'];
+const songs = ['nutrition'];
 
 // Keep track of song
 let songIndex = 0;
@@ -159,15 +159,16 @@ function calculateBMI() {
 			result.innerHTML =
 				`Normal Weight Range: <span style="color:#0be881">${bmi}</span>
         <span style="color:#0be881"> Great News!! </span>`;
-    else if(bmi >=25 && bmi < 29.9 ) 
-     `Overweight : <span style="color:#ff884d">${bmi}</span>
+     else if(bmi >= 25 && bmi < 29.9 ) 
+    	result.innerHTML =
+     `Overweight: <span style="color:#ff884d">${bmi}</span>
      <span style="color:#ff884d"> Is time to make workout and eat healthier!! </span>`;
      else if (bmi >= 30.0 && bmi < 34.9)
 			result.innerHTML =
 				`Obesity Class I: <span style="color:#ff5e57">${bmi}</span>
         <span style="color:#ff5e57"> WARNING high risk of heart attacks and metabolic disease </span>`;
-        // .style.color ="#ff5e57"
-      else if (bmi >= 35.0 && bmi < 39.9)
+        
+     else if (bmi >= 35.0 && bmi < 39.9)
         result.innerHTML =
         `Obesity Class II: <span style="color:#ff5e57">${bmi}</span>
         <span style="color:#ff5e57">WARNING high risk of heart attacks and metabolic disease </span>`;  
