@@ -4,12 +4,6 @@
 
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- 
-
 
   <title>Front End Porfolio JavaScript - WDD330</title>
   <meta charset="utf-8">
@@ -22,6 +16,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script>function toggleMenu(){
     // console.log(document.getElementById("primaryNav").classList);
      document.getElementById("primaryNav").classList.toggle("hide");
@@ -39,9 +34,11 @@
   </style>
 
 </head>
+
+
+
 <body>
   <nav class="navbar">
-    
     <label class="logo">BioNutriente</label>
     <button class="toggle" onclick=toggleMenu()>&#9776;</button>  
     <ul id="primaryNav" class= "">
@@ -51,10 +48,9 @@
          <li><a href="https://iodaniel.github.io/iodaniel_resume/">Resume</a></li>
          <li><a href="#">WDD230</a></li>
      </ul>
-  </nav>
-<main>
-<body>
-<h1>BioNutriente Simple Nutrition <span>&#128241</span></h1>
+</nav>
+  <main>
+<h1>BioNutriente Simple Nutrition <span>&#128241;</span></h1>
 <div class="grid">
   <div class="column1">
 <div class="audio-container" id="audio-container">
@@ -64,8 +60,7 @@
           <div class="progress" id="progress"></div>
       </div>
   </div>
- 
-  
+   
   <audio src="music/melody.mp3" id="audio"></audio>
   <div class="img-container">
       <img src="images/nutrition.jpg" alt="music-cover" id="cover">
@@ -128,22 +123,17 @@
   Remember, healthy eating is all about balance, variety, and moderation. So enjoy a wide range of nutritious foods, and don't deprive yourself of the occasional treat. With the right nutrition, you can achieve your weight loss goals and feel your best.</p>
 
 
-
-
-
-
-
-
   <h2>Contact me</h2>
   <div class="row">
-    <p><span>&#128231</span>Email me at iodaniel@byui.edu</p>
+    <p><span>&#128231;</span>Email me at iodaniel@byui.edu</p>
 
   </div>
-</body>
 </main>
-  <footer >
-  >
-    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" color:white;>Webcex</a>
+
+
+  <footer>
+  
+    <p>2022 | &copy; Nutriente LLC | El Paso, TX</p><a href="http://www.webcex.com" style="color:white;">Webcex</a>
 
   </footer>
 
