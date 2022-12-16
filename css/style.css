@@ -19,9 +19,13 @@ body {
 
 
 .grid{
-  display:grid;
-  gap:10px;
+  display: grid;
+  gap: 10px;
   grid-template-columns: 2fr 1fr;
+  background-color: white;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 25px 25px 30px rgb(0 0 0 / 15%);
 }
 
 .row:after {
@@ -73,25 +77,27 @@ h1{
 }
 
 #btn{
-  background-color: #024b94;
+  background-color: #2996cc;
   border-radius: 10%;
 }
 
 #prev{
-  color:#024b94;
-  background-color: gold;
+  color:white;
+  background-color: #2996cc;
   border-radius: 10%;
 }
 
 #play{
-  color:#024b94;
-  background-color: gold;
+  color:white;
+  background-color: #2996cc;
   border-radius: 10%;
 }
-
+#title{
+  color:#2996cc;
+}
 #next{
-  color:#024b94;
-  background-color: gold;
+  color:white;
+  background-color: #2996cc;
   border-radius: 10%;
 }
 
@@ -110,7 +116,7 @@ h1{
     box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
 }
 .container-bmi h1{
-   background: #024b94;
+   background: #2996cc;
    color: white;
    text-align: center;
    font-size: 23px;
