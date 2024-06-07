@@ -1,0 +1,43 @@
+
+[
+    {
+        "question": "What is Inventory?",
+        "options": [
+            "To produce sooner, faster, or in greater quantities than customer demands.",
+            "Raw material, work in process, or finished goods which are not having value added to it.",
+            "People or parts that wait for a work cycle to be completed.",
+            "Unnecessary movement of people, parts or machines within a process."
+        ],
+        "correct_answer": "Raw material, work in process, or finished goods which are not having value added to it."
+    },
+    {
+        "question": "What is Overproduction?",
+        "options": [
+            "To produce sooner, faster, or in greater quantities than customer demands.",
+            "People or parts that wait for a work cycle to be completed.",
+            "Unnecessary movement of people, parts or machines within a process.",
+            "Not right the first time. Repetition or correction of a process. Scrap, rework and defects."
+        ],
+        "correct_answer": "To produce sooner, faster, or in greater quantities than customer demands."
+    },
+    {
+        "question": "What is Waiting?",
+        "options": [
+            "Raw material, work in process, or finished goods which are not having value added to it.",
+            "Unnecessary movement of people, parts or machines within a process.",
+            "People or parts that wait for a work cycle to be completed.",
+            "Processing beyond the standard required by the customer."
+        ],
+        "correct_answer": "People or parts that wait for a work cycle to be completed."
+    },
+    {
+        "question": "What is Motion?",
+        "options": [
+            "Unnecessary movement of people, parts or machines within a process.",
+            "Unnecessary movement of people or parts between processes.",
+            "Underutilizing people’s talents, skills, and knowledge.",
+            "Processing beyond the standard required by the customer."
+        ],
+        "correct_answer": "Unnecessary movement of people, parts or machines within a process."
+    }
+]

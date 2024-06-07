@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale">
+<title>Vue App</title>
+<link rel="stylesheet" type='text/css' href="../vue/style.css">
+</head>
+<body>
+    <div class="nav-bar"></div>
+    <i class="fab fa-vuejs"></i>
+    <div id="app" v-cloak>
+       <div class="product">
+        <div class="product-image"> 
+                <img src="">
+        </div> 
+        <h1>{{greeting}}</h1>
+       
+
+<hr/>
+        <div class= "product-info">
+                <h1>{{product}}</h1>
+        <input v-model="greeting"/>
+        <button @click="isVissible = !isVissible">Toggle Box</button> <!--javascript  isVissible is = false-->       
+        <div v-if="isVissible" class="box"></div>
+        <!--<div v-else-if="isVissible2" class="box2"></div>
+        <div v-else="isVissible3" class="box3"></div>-->
+        </div>
+ 
+       </div>
+    </div>
+    <div>
+            <p>Web Services focus in your needs as a business owner, improve your presence online.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <script src="../vue/main.js"></script>
+</body>
+</html>
+
+
+
+
+</html>
