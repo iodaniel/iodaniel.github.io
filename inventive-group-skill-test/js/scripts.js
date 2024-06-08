@@ -1,24 +1,7 @@
 // Web Developer Skills Project:
+//Author: Daniel Marz 
+//Inventive Group Skill Test
 
-// Tests: definition of the terminologies
-
-// LEAN TERMINOLOGY
-// •	6S: Study, sort, shine, set in order, standardize, and sustain.
-// •	Andon: A visual light used to show the current status of a machine or process.
-// •	Current State: Current condition of anything. How something is currently being done.
-// •	Defects: Waste of inspection, repair, and scrapping of material to which value has already been added.
-// •	FIFO: First in, first out.
-// •	Five Whys: Asking five why questions to get to the root cause of a problem.
-// •	Flow: Move or process in a forward motion.
-// •	Future state: The condition we imagine something can be in once changes have taken place.
-// •	Gemba: “The real place” the place where work occurs.
-// •	Hai: “I accept the challenge.”
-// •	Hansei: “Reflection”. Reflect on what went right or what went wrong. Make changes if needed and try something else.
-// •	Heijunka: A process to help manage production by leveling peaks and valleys of customer demand.
-// •	Kaizen: Many small changes for the better, created by the people that do the work.
-// •	Kanban: A visual system that shows you to replace what has been consumed.
-
- 
 // 8 WASTES
 // 1.	Overproduction: To produce sooner, faster, or in greater quantities than customer demands.
 // 2.	Inventory: Raw material, work in process, or finished goods which are not having value added to it.
@@ -31,82 +14,83 @@
 $(document).ready(function() {
     const data = [
         {
-            "question": "What is Overproduction?",
+            "question": "1. What is Overproduction?",
             "options": [
-                "To produce sooner, faster, or in greater quantities than customer demands.",
-                "Raw material, work in process, or finished goods which are not having value added to it.",
-                "People or parts that wait for a work cycle to be completed.",
-                "Unnecessary movement of people, parts or machines within a process."
+                "a. To produce sooner, faster, or in greater quantities than customer demands.",
+                "b. Production too little.",
+                "c. People or parts that wait for a work cycle to be completed.",
+                "d. Underutilizing people's talents, skills, and knowledge."
             ],
             "correct_answer": "To produce sooner, faster, or in greater quantities than customer demands."
         },
         {
             "question": "What is Inventory?",
             "options": [
-                "To produce sooner, faster, or in greater quantities than customer demands.",
-                "Raw material, work in process, or finished goods which are not having value added to it.",
-                "People or parts that wait for a work cycle to be completed.",
-                "Unnecessary movement of people, parts or machines within a process."
+                "a. To produce sooner, faster, or in greater quantities than customer demands.",
+                "b. Raw material, work in process, or finished goods which are not having value added to it.",
+                "c. People or parts that wait for a work cycle to be completed.",
+                "d. Unnecessary movement of people, parts or machines within a process."
             ],
             "correct_answer": "Raw material, work in process, or finished goods which are not having value added to it."
         },
         {
             "question": "What is Waiting?",
             "options": [
-                "Raw material, work in process, or finished goods which are not having value added to it.",
-                "Unnecessary movement of people, parts or machines within a process.",
-                "People or parts that wait for a work cycle to be completed.",
-                "Processing beyond the standard required by the customer."
+                "a. Raw material, work in process, or finished goods which are not having value added to it.",
+                "b. Unnecessary movement of people, parts or machines within a process.",
+                "c. People or parts that wait for a work cycle to be completed.",
+                "d. Processing beyond the standard required by the customer."
             ],
             "correct_answer": "People or parts that wait for a work cycle to be completed."
         },
         {
             "question": "What is Motion?",
             "options": [
-                "Unnecessary movement of people, parts or machines within a process.",
-                "Unnecessary movement of people or parts between processes.",
-                "Underutilizing people’s talents, skills, and knowledge.",
-                "Processing beyond the standard required by the customer."
+                "a. Unnecessary movement of people, parts or machines within a process.",
+                "b. Unnecessary movement of people or parts between processes.",
+                "c. Underutilizing people’s talents, skills, and knowledge.",
+                "d. Processing beyond the standard required by the customer."
             ],
             "correct_answer": "Unnecessary movement of people, parts or machines within a process."
         },
         {
             "question": "What is Transportation?",
             "options": [
-                "Unnecessary movement of people, parts or machines within a process.",
-                "Unnecessary movement of people or parts between processes.",
-                "Underutilizing people’s talents, skills, and knowledge.",
-                "Processing beyond the standard required by the customer."
+                "a. Unnecessary movement of people, parts or machines within a process.",
+                "b. Unnecessary movement of people or parts between processes.",
+                "c. Underutilizing people’s talents, skills, and knowledge.",
+                "d. Processing beyond the standard required by the customer."
             ],
             "correct_answer": "Unnecessary movement of people or parts between processes."
         },
         {
             "question": "What are Defects?",
             "options": [
-                "Raw material, work in process, or finished goods which are not having value added to it.",
-                "People or parts that wait for a work cycle to be completed.",
-                "Not right the first time. Repetition or correction of a process. Scrap, rework and defects.",
-                "Processing beyond the standard required by the customer."
+                "a. Raw material, work in process, or finished goods which are not having value added to it.",
+                "b. People or parts that wait for a work cycle to be completed.",
+                "c. Not right the first time Repetition or correction of a process Scrap, rework and defects.",
+                "d. Processing beyond the standard required by the customer."
             ],
-            "correct_answer": "Not right the first time. Repetition or correction of a process. Scrap, rework and defects."
+            "correct_answer": "Not right the first time Repetition or correction of a process Scrap, rework and defects."
         },
+        
         {
             "question": "What is Over Processing?",
             "options": [
-                "To produce sooner, faster, or in greater quantities than customer demands.",
-                "People or parts that wait for a work cycle to be completed.",
-                "Unnecessary movement of people, parts or machines within a process.",
-                "Processing beyond the standard required by the customer."
+                "a. To produce sooner, faster, or in greater quantities than customer demands.",
+                "b. People or parts that wait for a work cycle to be completed.",
+                "c. Unnecessary movement of people, parts or machines within a process.",
+                "d. Processing beyond the standard required by the customer."
             ],
             "correct_answer": "Processing beyond the standard required by the customer."
         },
         {
             "question": "What is Talent?",
             "options": [
-                "Unnecessary movement of people or parts between processes.",
-                "Underutilizing people’s talents, skills, and knowledge.",
-                "Processing beyond the standard required by the customer.",
-                "People or parts that wait for a work cycle to be completed."
+                "a. Unnecessary movement of people or parts between processes.",
+                "b. Underutilizing people’s talents, skills, and knowledge.",
+                "c. Processing beyond the standard required by the customer.",
+                "d. People or parts that wait for a work cycle to be completed."
             ],
             "correct_answer": "Underutilizing people’s talents, skills, and knowledge."
         }
@@ -115,57 +99,149 @@ $(document).ready(function() {
     let currentQuestionIndex = 0;
     let score = 0;
     const quizContainer = $('#quiz-container');
+    const submitButton = $('#submit'); // button define in HTMl
+    const resultDiv = $('#result'); // Div
+    const questionCounter = $('#questionCounter');
 
-    function showQuestion(index) {
+
+   function showQuestion(index) {
         if (index < data.length) {
             const item = data[index];
-            const questionDiv = $('<div>').addClass('question').attr('id', `question${index}`);
-
-            const questionTitle = $('<h2>').text(item.question);
+            const questionDiv = $('<div>').addClass('question mb-3');
+    
+            const questionTitle = $('<h6>')
+                .text(item.question)
+                .addClass('text-danger')
+                .css('font-weight', 'bold'); 
             questionDiv.append(questionTitle);
-
+    
+            const redHr = $('<hr>').css('border-color', 'red');
+            questionDiv.append(redHr);
+    
             item.options.forEach(option => {
-                const label = $('<label>');
-                const radio = $('<input>').attr({
-                    type: 'radio',
+                const div = $('<div>').addClass('form-check'); //This class add the radio selector 
+                const radio = $('<input>').addClass('form-check-input').attr({
                     name: `question${index}`,
+                    type: 'radio',
+                    id: `option${option}`,
                     value: option
-                });
-                label.append(radio).append(option);
-                questionDiv.append(label).append('<br>');
+                }).css('float', 'right'); 
+                const optionText = option.split('. ')[1];
+                const label = $('<label>').addClass('form-check-label').attr('for', `option${option}`)
+                    .append(`<span>${option[0]}.&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</span>${optionText}`);//&nbsp is the space that is added top each question after the a. 
+                div.append(label).append(radio); // Change the order of the selector 
+                questionDiv.append(div);
             });
-
-            const submitButton = $('<button>').text('Submit').attr('id', `submit${index}`).addClass('submit-button');
-            const resultDiv = $('<div>').attr('id', `result${index}`).addClass('result');
-            questionDiv.append(submitButton).append(resultDiv);
-
+    
+    
             quizContainer.html(questionDiv);
-
-            submitButton.on('click', function() {
-                const selectedOption = $(`input[name="question${index}"]:checked`).val();
-                if (!selectedOption) {
-                    resultDiv.text('You don\'t have an answer ready').css('color', 'grey');
-                } else {
-                    if (selectedOption === item.correct_answer) {
-                        score++;
-                    }
-                    currentQuestionIndex++;
-                    showQuestion(currentQuestionIndex);
-                }
-            });
+            questionCounter.text((index + 1) + ' / ' + data.length);
         } else {
             showResult();
         }
     }
-
+    
+    
+    $(document).ready(function() {
+        
+        $('#quiz-container').on('change', 'input[type="radio"]', function() {
+            if ($('input[type="radio"]:checked').length > 0) {
+                //sellect an option
+                resultDiv.hide(); // hide error message
+                submitButton.show(); //show error message
+            }
+        });
+    
+        submitButton.on('click', function() {
+            const selectedOption = $('input[name="question' + currentQuestionIndex + '"]:checked').val();
+            console.log("Selected Option: ", selectedOption);
+            if (!selectedOption) {
+                //hide send button 
+                submitButton.hide();
+                // show error message
+                resultDiv.text('Please select an answer').addClass('btn btn-grey btn-pill').css({
+                    'color': 'white',
+                    'background-color': 'grey',
+                    'border-radius': '50px',
+                    'width': '100%', //style
+                    'display': 'block' 
+                }).show(); 
+            } else {
+                // comparation of the answers 
+                const optionPrefix = selectedOption.split(". ")[0] + ". ";
+                const selectedAnswerText = selectedOption.substring(optionPrefix.length).trim();
+                if (selectedAnswerText === data[currentQuestionIndex].correct_answer.trim()) {
+                    score++;
+                    console.log("Correct Answer! Score: ", score);
+                } else {
+                    console.log("Wrong Answer! Correct was: ", data[currentQuestionIndex].correct_answer);
+                }
+                currentQuestionIndex++;
+                if (currentQuestionIndex < data.length) {
+                    console.log("Moving to next question");
+                    showQuestion(currentQuestionIndex);
+                } else {
+                    console.log("Displaying results");
+                    showResult(); 
+                }
+            }
+        });
+    });
+    
     function showResult() {
-        const percentage = (score / data.length) * 100;
-        const resultCard = $('<div>').addClass('result-card');
-        const circle = $('<div>').addClass('circle').text(`${percentage.toFixed(0)}%`);
-        const resultText = $('<p>').text(`You scored ${score} out of ${data.length}`);
-        resultCard.append(circle).append(resultText);
+        $('.container').removeClass('shadow');
+        const percentage = (score / data.length) * 100; // calculate the result in %
+        console.log("Final Score: ", score, "Percentage: ", percentage.toFixed(2)); // show the final score
+        
+        // hide tje sudmit button 
+        submitButton.hide();
+    
+        // create a card for new style
+        const resultCard = $('<div>').addClass('result-card').css({
+            'width': '200px', 
+            'height': '320px', 
+            'padding': '10px 10px',
+            'margin': '20px auto', 
+            'box-shadow': '0px 4px 8px rgba(0, 0, 0, 0.5)',
+            'border-radius': '8px', 
+            'text-align': 'center', 
+            'background-color': 'white' 
+        });
+    
+        //Result title 
+        const resultTitle = $('<h5>').text('Tested completed!').css({
+            'font-weight': 'bold'
+        });
+    
+        // subtitle
+        const scoreLabel = $('<p>').text('Your score:').css({
+            'font-weight': 'bold',
+            'color': 'grey'
+        });
+    
+        //circle of result
+        const circle = $('<div>').addClass('circle').text(`${percentage.toFixed(0)}%`).css({
+            'font-size': '40px',
+            'line-height': '40px', 
+            'height': '150px', 
+            'width': '150px',
+            'background-color': 'black', 
+            'border-radius': '50%', 
+            'border': '2px solid #ccc', 
+            'margin': '5px auto' 
+        });
+    
+        // Link for return to home page
+        const returnLink = $('<a>').attr('href', 'index.html').css('color', 'red').text('Return Home');
+    
+     
+        resultCard.append(resultTitle, scoreLabel, circle, returnLink);
         quizContainer.html(resultCard);
+        questionCounter.text('8/8');
     }
-
+    
+    
     showQuestion(currentQuestionIndex);
+
 });
+ 
